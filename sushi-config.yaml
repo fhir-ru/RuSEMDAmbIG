@@ -21,7 +21,7 @@ contact:
       - system: url
         value: https://github.com/fhir-ru/RuSEMDAmbIG
 dependencies:
-  ru.core: 0.26.0
+  ru.core: current
 pages:
   index.md:
     title: Назначение

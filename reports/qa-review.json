@@ -8,8 +8,8 @@
     "status": "draft",
     "package-id": "ru.semd.amb",
     "ig-ver": "0.1.0",
-    "date": "Sun, 18 Oct, 2026 20:03:09 +0300",
-    "dateISO8601": "2026-10-18T20:03:09+03:00",
+    "date": "Sun, 18 Oct, 2026 20:24:15 +0300",
+    "dateISO8601": "2026-10-18T20:24:15+03:00",
     "errs": 0,
     "warnings": 503,
     "hints": 157,
@@ -18,7 +18,7 @@
     "suppressed-warnings": 0,
     "version": "5.0.0",
     "tool": "6.0.0-snapshot1 (3)",
-    "maxMemory": 625513680
+    "maxMemory": 874692112
   },
   "counts_reconciled": {
     "information": 157,
@@ -30,9 +30,9 @@
     "html_and_publication": 5
   },
   "source_sha256": {
-    "output/qa.xml": "cd569cc7cb0f46bf5d49acfc56ebb9d9447cd2a38f255608c591b65d2c8ad23e",
-    "output/qa.json": "b24f43c1af850538aa19614057074ee7d2cf1cdba1470393db7d64cc1d8df904",
-    "output/qa.txt": "8e2b52b2404ab3d7ab2443adde9d521f942fadce2425cece363256a4034a0266"
+    "output/qa.xml": "5da34438f5f0c1ccc6486ea3030ff731a98b359c9df1c5b64a0d82666b98335c",
+    "output/qa.json": "69449064e5b656001888c3d81f7271d201ff13497df452511807519e877b6635",
+    "output/qa.txt": "e9086949dd507996d53dd45b2be93e82fbaf0e0547f65fdfe354f369378c628f"
   },
   "notes": [
     "qa.xml omits build issues; qa.txt n/a block supplies those without duplicating resource issues.",
@@ -69,7 +69,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "21921",
+            "operationoutcome-issue-col": "21929",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_DEPRECATED",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -83,7 +83,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "27376",
+            "operationoutcome-issue-col": "27384",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_DEPRECATED",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -133,7 +133,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "32942",
+            "operationoutcome-issue-col": "32943",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -147,7 +147,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "33057",
+            "operationoutcome-issue-col": "33058",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -161,7 +161,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "33168",
+            "operationoutcome-issue-col": "33169",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -175,7 +175,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "33281",
+            "operationoutcome-issue-col": "33282",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -189,7 +189,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "33390",
+            "operationoutcome-issue-col": "33391",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -203,7 +203,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "33503",
+            "operationoutcome-issue-col": "33504",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -217,7 +217,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "33614",
+            "operationoutcome-issue-col": "33615",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -231,7 +231,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "33726",
+            "operationoutcome-issue-col": "33727",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -245,7 +245,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "33839",
+            "operationoutcome-issue-col": "33840",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -259,7 +259,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "33946",
+            "operationoutcome-issue-col": "33947",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -273,7 +273,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "34056",
+            "operationoutcome-issue-col": "34057",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -287,7 +287,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "34166",
+            "operationoutcome-issue-col": "34167",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -301,7 +301,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "34283",
+            "operationoutcome-issue-col": "34284",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -315,7 +315,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "34392",
+            "operationoutcome-issue-col": "34393",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -329,7 +329,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "34498",
+            "operationoutcome-issue-col": "34499",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -343,7 +343,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "35194",
+            "operationoutcome-issue-col": "35195",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_EXPERIMENTAL",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
@@ -401,7 +401,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "44709",
+            "operationoutcome-issue-col": "44724",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "DEPRECATED_CONCEPT_FOUND",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -423,7 +423,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "80600",
+            "operationoutcome-issue-col": "80615",
             "operationoutcome-issue-source": "InstanceValidator",
             "operationoutcome-message-id": "http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-24",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -437,7 +437,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "151500",
+            "operationoutcome-issue-col": "151515",
             "operationoutcome-issue-source": "InstanceValidator",
             "operationoutcome-message-id": "http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-24",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -459,7 +459,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "82829",
+            "operationoutcome-issue-col": "82844",
             "operationoutcome-issue-source": "InstanceValidator",
             "operationoutcome-message-id": "http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-24",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -473,7 +473,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "151599",
+            "operationoutcome-issue-col": "151614",
             "operationoutcome-issue-source": "InstanceValidator",
             "operationoutcome-message-id": "http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-24",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -495,7 +495,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "135353",
+            "operationoutcome-issue-col": "135368",
             "operationoutcome-issue-source": "InstanceValidator",
             "operationoutcome-message-id": "http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-24",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -509,7 +509,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "152740",
+            "operationoutcome-issue-col": "152755",
             "operationoutcome-issue-source": "InstanceValidator",
             "operationoutcome-message-id": "http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-24",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -531,7 +531,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "44724",
+            "operationoutcome-issue-col": "44739",
             "operationoutcome-issue-source": "InstanceValidator"
           },
           "source": "output/qa.xml"

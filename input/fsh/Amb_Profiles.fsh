@@ -1,5 +1,5 @@
-Alias: $CoreBundle = https://fhir.ru/ig/core/StructureDefinition/core-bundle
-Alias: $CoreComposition = https://fhir.ru/ig/core/StructureDefinition/core-composition
+Alias: $CoreBundle = https://fhir.ru/ig/core/StructureDefinition/core-bundle|0.26.0
+Alias: $CoreComposition = https://fhir.ru/ig/core/StructureDefinition/core-composition|0.26.0
 Alias: $CorePatient = https://fhir.ru/ig/core/StructureDefinition/core-patient
 Alias: $CoreEncounter = https://fhir.ru/ig/core/StructureDefinition/core-encounter
 Alias: $SemdTypes = urn:oid:1.2.643.5.1.13.13.11.1520
@@ -11,6 +11,7 @@ Id: semd-amb-bundle
 Title: "Документ амбулаторной консультации"
 Description: "Документ FHIR, передающий клиническое содержание протокола консультации СЭМД 290 редакции 7. Профиль задаёт оболочку документа; проверенное покрытие маппинга ограничено опубликованным примером."
 * ^status = #draft
+* ^baseDefinition = "https://fhir.ru/ig/core/StructureDefinition/core-bundle|0.26.0"
 * type = #document
 * identifier 1..1
 * identifier.system 1..1
@@ -38,6 +39,7 @@ Id: semd-amb-composition
 Title: "Содержание протокола амбулаторной консультации"
 Description: "Структура документа консультации СЭМД 290: пациент, посещение, автор и разделы с исходным клиническим содержанием. Перечень и число разделов не фиксируются по единственному примеру."
 * ^status = #draft
+* ^baseDefinition = "https://fhir.ru/ig/core/StructureDefinition/core-composition|0.26.0"
 * type.coding ^slicing.discriminator.type = #value
 * type.coding ^slicing.discriminator.path = "system"
 * type.coding ^slicing.rules = #open

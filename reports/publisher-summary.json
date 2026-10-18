@@ -9,6 +9,7 @@
   "publisher": "3.0.1",
   "fhir": "5.0.0",
   "ru_core": "0.26.0",
+  "ru_core_delivery": "current",
   "terminology": "-tx https://tx.fhir.org/r5",
   "bundle_sha256": "e8eed36674e84c56b2ee092337ef6d7d0385f9e2b5f57e3e86498f4fdf059845"
 }

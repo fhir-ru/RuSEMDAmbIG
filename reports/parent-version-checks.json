@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-18",
+  "tool": "SUSHI 3.15.0",
+  "scope": "Separate temporary project; actual official ru.core#current downloaded by SUSHI. No fake package versions.",
+  "delivery_dependency": "ru.core#current",
+  "actual_package": {
+    "name": "ru.core",
+    "version": "0.26.0",
+    "date": "20260924173706"
+  },
+  "positive": {
+    "parent_version": "0.26.0",
+    "explicit_baseDefinition_version": "0.26.0",
+    "exit_code": 0,
+    "profiles": 4,
+    "errors": 0,
+    "warnings": 0,
+    "generated_baseDefinitions": [
+      "https://fhir.ru/ig/core/StructureDefinition/core-bundle|0.26.0",
+      "https://fhir.ru/ig/core/StructureDefinition/core-composition|0.26.0"
+    ],
+    "result": "PASS"
+  },
+  "negative": {
+    "parent_version": "99.0.0",
+    "explicit_baseDefinition_version": "99.0.0",
+    "exit_code": 2,
+    "errors": 2,
+    "warnings": 0,
+    "messages": [
+      "Parent https://fhir.ru/ig/core/StructureDefinition/core-bundle|99.0.0 not found for AmbBundle",
+      "Parent https://fhir.ru/ig/core/StructureDefinition/core-composition|99.0.0 not found for AmbComposition"
+    ],
+    "result": "PASS: absent version rejected"
+  },
+  "interpretation": "current is only the delivery channel. Versioned Parent selects 0.26.0 explicitly; explicit baseDefinition retains that version in generated profiles. A package lacking the requested parent version fails compilation. Full Publisher verification is separate."
+}

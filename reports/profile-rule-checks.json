@@ -5,46 +5,46 @@
   "passed": true,
   "checks": [
     {
-      "expected": true,
       "passed": true,
-      "expression": "entry.first().resource.is(Composition)",
+      "expected": true,
+      "actual": true,
       "name": "bundle_positive",
-      "actual": true
+      "expression": "entry.first().resource.is(Composition)"
     },
     {
-      "expected": false,
       "passed": true,
-      "expression": "entry.first().resource.is(Composition)",
+      "expected": false,
+      "actual": false,
       "name": "bundle_noncomposition_first_negative",
-      "actual": false
+      "expression": "entry.first().resource.is(Composition)"
     },
     {
-      "expected": true,
       "passed": true,
-      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())",
+      "expected": true,
+      "actual": true,
       "name": "smnn_dose_text_positive",
-      "actual": true
+      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())"
     },
     {
+      "passed": true,
       "expected": false,
-      "passed": true,
-      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())",
+      "actual": false,
       "name": "smnn_dose_text_removed_negative",
-      "actual": false
+      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())"
     },
     {
-      "expected": true,
       "passed": true,
-      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())",
+      "expected": true,
+      "actual": true,
       "name": "non_smnn_no_text_allowed",
-      "actual": true
+      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())"
     },
     {
-      "expected": true,
       "passed": true,
-      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())",
+      "expected": true,
+      "actual": true,
       "name": "explicit_unit_no_consumer_text_allowed",
-      "actual": true
+      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())"
     }
   ]
 }
