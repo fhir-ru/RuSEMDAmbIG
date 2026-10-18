@@ -16,7 +16,7 @@ def val(node, path, default=''):
 
 
 def category(message):
-    if any(token in message for token in ('CodeSystem', 'code system', 'No definition could be found for URL', 'versionless include')):
+    if any(token in message for token in ('CodeSystem', 'code system', 'No definition could be found for URL', 'versionless include', 'Не удалось найти определение для значения URL')):
         return 'external_codes_and_versions'
     if any(token in message for token in ('HTML', 'XHTML', 'lang tag', 'description for the resource', 'history.html', 'fragment', 'page named')):
         return 'html_and_publication'

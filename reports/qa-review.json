@@ -25,8 +25,8 @@
     "warning": 503
   },
   "warning_categories": {
-    "profiles_and_examples": 205,
-    "external_codes_and_versions": 293,
+    "profiles_and_examples": 164,
+    "external_codes_and_versions": 334,
     "html_and_publication": 5
   },
   "source_sha256": {
@@ -1716,7 +1716,7 @@
     },
     {
       "severity": "warning",
-      "category": "profiles_and_examples",
+      "category": "external_codes_and_versions",
       "message": "Не удалось найти определение для значения URL 'urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.51'",
       "count": 9,
       "instances": [
@@ -1922,7 +1922,7 @@
     },
     {
       "severity": "warning",
-      "category": "profiles_and_examples",
+      "category": "external_codes_and_versions",
       "message": "Не удалось найти определение для значения URL 'urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.50'",
       "count": 2,
       "instances": [
@@ -2706,7 +2706,7 @@
     },
     {
       "severity": "warning",
-      "category": "profiles_and_examples",
+      "category": "external_codes_and_versions",
       "message": "Не удалось найти определение для значения URL 'urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.10'",
       "count": 2,
       "instances": [
@@ -3182,7 +3182,7 @@
     },
     {
       "severity": "warning",
-      "category": "profiles_and_examples",
+      "category": "external_codes_and_versions",
       "message": "Не удалось найти определение для значения URL 'urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.70'",
       "count": 4,
       "instances": [
@@ -3430,7 +3430,7 @@
     },
     {
       "severity": "warning",
-      "category": "profiles_and_examples",
+      "category": "external_codes_and_versions",
       "message": "Не удалось найти определение для значения URL 'urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.15'",
       "count": 2,
       "instances": [
@@ -4454,7 +4454,7 @@
     },
     {
       "severity": "warning",
-      "category": "profiles_and_examples",
+      "category": "external_codes_and_versions",
       "message": "Не удалось найти определение для значения URL 'urn:oid:1.2.643.5.1.13.3.25.77.50.100.1.1.70'",
       "count": 2,
       "instances": [
@@ -4490,7 +4490,7 @@
     },
     {
       "severity": "warning",
-      "category": "profiles_and_examples",
+      "category": "external_codes_and_versions",
       "message": "Не удалось найти определение для значения URL 'urn:oid:1.2.643.5.1.13.3.25.77.50.100.1.1.51'",
       "count": 2,
       "instances": [
@@ -4526,7 +4526,7 @@
     },
     {
       "severity": "warning",
-      "category": "profiles_and_examples",
+      "category": "external_codes_and_versions",
       "message": "Не удалось найти определение для значения URL 'urn:oid:1.2.643.5.1.13.13.17.1.1'",
       "count": 2,
       "instances": [
@@ -8330,7 +8330,7 @@
     },
     {
       "severity": "warning",
-      "category": "profiles_and_examples",
+      "category": "external_codes_and_versions",
       "message": "Не удалось найти определение для значения URL 'urn:oid:1.2.643.5.1.13.13.11.1358'",
       "count": 16,
       "instances": [
