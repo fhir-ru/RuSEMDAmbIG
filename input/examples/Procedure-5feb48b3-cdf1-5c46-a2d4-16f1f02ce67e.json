@@ -1,0 +1,29 @@
+{
+  "resourceType": "Procedure",
+  "id": "5feb48b3-cdf1-5c46-a2d4-16f1f02ce67e",
+  "status": "completed",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.99.2.726",
+        "code": "1",
+        "display": "Консультация",
+        "version": "3.50"
+      }
+    ]
+  },
+  "occurrencePeriod": {
+    "start": "2025-05-02T15:30:00+03:00",
+    "end": "2025-05-02T15:45:00+03:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Медицинская услуга</h2><table><tbody><tr><td>Статус</td><td>выполнено</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Консультация</td></tr><tr><td>Период выполнения</td><td>Начало: 2025-05-02T15:30:00+03:00; Окончание: 2025-05-02T15:45:00+03:00</td></tr></tbody></table></div>"
+  }
+}

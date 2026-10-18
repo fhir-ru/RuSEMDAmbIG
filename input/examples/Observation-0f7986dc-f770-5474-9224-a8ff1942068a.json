@@ -1,0 +1,65 @@
+{
+  "resourceType": "Observation",
+  "id": "0f7986dc-f770-5474-9224-a8ff1942068a",
+  "status": "unknown",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.11.1514",
+        "code": "19",
+        "display": "SCORE",
+        "version": "5.6"
+      }
+    ]
+  },
+  "effectiveDateTime": "2025-05-02T15:30:00+03:00",
+  "valueQuantity": {
+    "value": 9.0,
+    "system": "urn:oid:1.2.643.5.1.13.13.11.1358",
+    "code": "128",
+    "unit": "Ед",
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+        "valueQuantity": {
+          "value": 9.0,
+          "unit": "U",
+          "system": "http://unitsofmeasure.org",
+          "code": "U"
+        }
+      }
+    ]
+  },
+  "hasMember": [
+    {
+      "reference": "urn:uuid:6256d6fa-4f54-5243-9bc7-c96dc54e0e88"
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "urn:uuid:4e13abd8-528e-5e79-b0d6-4a430bc1920c"
+    },
+    {
+      "reference": "urn:uuid:67beff8c-5a3b-5e40-8021-6be1106f80f7"
+    },
+    {
+      "reference": "urn:uuid:bfac2509-aafa-5097-be68-a7828653ad50"
+    },
+    {
+      "reference": "urn:uuid:c7ed8a6c-25ec-5aaa-9207-0110215de4f9"
+    },
+    {
+      "reference": "urn:uuid:77a2d0d5-79cd-5163-8283-80fd1ea8c376"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>SCORE</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:30:00+03:00</td></tr><tr><td>Значение</td><td>9.0 Ед</td></tr><tr><td>Связанные наблюдения</td><td>Наблюдение: Интерпретация результатов расчета клинической шкалы или опросника</td></tr><tr><td>Основано на</td><td>Наблюдение: Параметры клинической шкалы и опросников; Наблюдение: Параметры клинической шкалы и опросников; Наблюдение: Параметры клинической шкалы и опросников; Наблюдение: Параметры клинической шкалы и опросников; Наблюдение: Параметры клинической шкалы и опросников</td></tr></tbody></table></div>"
+  }
+}

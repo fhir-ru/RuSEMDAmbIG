@@ -1,0 +1,294 @@
+id: ru.semd.amb
+canonical: https://fhir.ru/ig/semd/amb
+name: RuSEMDAmb
+title: Ru SEMD Amb IG
+description: Представление клинического содержания протокола амбулаторной консультации СЭМД 290 редакции 7 в FHIR R5.
+status: draft
+experimental: true
+version: 0.1.0
+fhirVersion: 5.0.0
+copyrightYear: 2026+
+releaseLabel: draft
+license: CC0-1.0
+language: ru
+publisher:
+  name: HL7 FHIR Россия
+  url: https://fhir.ru
+jurisdiction: urn:iso:std:iso:3166#RU
+contact:
+  - name: HL7 FHIR Россия
+    telecom:
+      - system: url
+        value: https://github.com/fhir-ru/RuSEMDAmbIG
+dependencies:
+  ru.core: 0.26.0
+pages:
+  index.md:
+    title: Назначение
+  scope.md:
+    title: Область применения и источники
+  mapping.md:
+    title: Маппинг
+  conventions.md:
+    title: Соглашения маппинга
+  limitations.md:
+    title: Ограничения
+  source-issues.md:
+    title: Замечания к исходному примеру
+  validation.md:
+    title: Проверки
+  changelog.md:
+    title: История изменений
+menu:
+  Начало: index.html
+  Область применения: scope.html
+  Маппинг: mapping.html
+  Соглашения: conventions.html
+  Артефакты: artifacts.html
+  Пример: Bundle-semd-amb-consultation-example.html
+  Проверки: validation.html
+  Ограничения: limitations.html
+parameters:
+  i18n-default-lang: ru
+  excludettl: true
+  shownav: true
+  active-tables: false
+instanceOptions:
+  manualSliceOrdering: true
+resources:
+  "Composition/33782963-3388-595d-8d16-ac2f2879e977":
+    name: "Composition 33782963"
+    description: "Протокол консультации: Протокол консультации"
+  "Patient/4d98843f-a824-531d-8d80-f50999ffabc4":
+    name: "Patient 4d98843f"
+    description: "Пациент: Сельченков Михаил Владимирович"
+  "Organization/a3234b57-6e3e-5ffb-a3d6-56e39c872688":
+    name: "Organization a3234b57"
+    description: "Организация: ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ \"ГОРОДСКАЯ ПОЛИКЛИНИКА № 64 ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ\""
+  "PractitionerRole/8919e25d-1c2b-5987-ac36-2c90c389b3a6":
+    name: "PractitionerRole 8919e25d"
+    description: "Роль медицинского работника: Врач-кардиолог"
+  "Practitioner/145fad7a-f3e5-562b-808f-e23e082845e1":
+    name: "Practitioner 145fad7a"
+    description: "Медицинский работник: Смирнов Александр Игоревич"
+  "Organization/1e12cf95-0196-5d36-863a-956ed52bfa05":
+    name: "Organization 1e12cf95"
+    description: "Организация: ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ \"ГОРОДСКАЯ ПОЛИКЛИНИКА № 64 ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ\""
+  "Organization/4d9d60f4-09c7-57e9-8433-06ca02deeff9":
+    name: "Organization 4d9d60f4"
+    description: "Организация: ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ \"ГОРОДСКАЯ ПОЛИКЛИНИКА № 64 ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ\""
+  "PractitionerRole/2463646b-3dc4-56d6-9cca-f9848d144ee4":
+    name: "PractitionerRole 2463646b"
+    description: "Роль медицинского работника"
+  "Encounter/ee657bbf-cede-5ee1-98ef-e0e771eabba6":
+    name: "Encounter ee657bbf"
+    description: "Посещение"
+  "Procedure/5feb48b3-cdf1-5c46-a2d4-16f1f02ce67e":
+    name: "Procedure 5feb48b3"
+    description: "Медицинская услуга: Консультация"
+  "Organization/934f942f-129b-5e81-be3e-a927ff0622fb":
+    name: "Organization 934f942f"
+    description: "Организация: Министерство здравоохранения Российской Федерации"
+  "Coverage/37d4c64a-7f8e-559c-9a74-08a2716976df":
+    name: "Coverage 37d4c64a"
+    description: "Страховое обеспечение"
+  "Organization/19baeed8-1e27-5c4c-82cc-3d211b841405":
+    name: "Organization 19baeed8"
+    description: "Организация: ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СТРАХОВАЯ КОМПАНИЯ \"ИНГОССТРАХ-М\""
+  "PractitionerRole/f6413708-afeb-55e4-9cf1-c9c9d0d3541b":
+    name: "PractitionerRole f6413708"
+    description: "Роль медицинского работника: Врач-терапевт"
+  "Practitioner/f495d057-78ff-5521-9730-c226d2e47416":
+    name: "Practitioner f495d057"
+    description: "Медицинский работник: Кузнецов Дмитрий Олегович"
+  "Organization/64e05ea1-f760-5cf4-8392-c4e1ed67b6de":
+    name: "Organization 64e05ea1"
+    description: "Организация: Государственное бюджетное учреждение здравоохранения города Москвы \"Городская поликлиника №164 Департамент здравоохранения города Москвы\""
+  "DocumentReference/798bba1f-2f4c-546d-91ec-c3ea467ede5a":
+    name: "DocumentReference 798bba1f"
+    description: "Связанный документ"
+  "Observation/548ab1be-bdb4-5e44-83d6-4a657788249f":
+    name: "Observation 548ab1be"
+    description: "Наблюдение: Обращение"
+  "Observation/703c744b-9dec-51c2-9613-26bdbe82c2aa":
+    name: "Observation 703c744b"
+    description: "Наблюдение: Место проведения"
+  "Observation/d27498b9-f82c-559a-a19d-2e11d157ad0a":
+    name: "Observation d27498b9"
+    description: "Наблюдение: Состояние пациента"
+  "Observation/49fc27ca-7194-5035-8db9-bc66bc2f8012":
+    name: "Observation 49fc27ca"
+    description: "Наблюдение: Объективные данные"
+  "Observation/6310e4ac-6774-5c0f-aaf0-59e6703590bf":
+    name: "Observation 6310e4ac"
+    description: "Наблюдение: Заключение консультации"
+  "Observation/25dd12a4-40a8-5024-b646-681d6615da46":
+    name: "Observation 25dd12a4"
+    description: "Наблюдение: Выявленные патологии"
+  "Observation/1236f785-eedd-5c03-8e2b-4ace58c740ae":
+    name: "Observation 1236f785"
+    description: "Наблюдение: Льготная категория"
+  "Observation/9b70e116-a0d9-58e7-8ab5-2ee94199c335":
+    name: "Observation 9b70e116"
+    description: "Наблюдение: Жалобы пациента"
+  "Observation/8d0e1bd8-f5a3-574e-8899-92f6d848b9c1":
+    name: "Observation 8d0e1bd8"
+    description: "Наблюдение: Текстовое описание"
+  "Observation/7efa5200-4b7a-52ce-a320-1e51d4aa636c":
+    name: "Observation 7efa5200"
+    description: "Наблюдение: Текстовое описание"
+  "Observation/2171bae3-ce1a-58af-991f-ff1d0555c00f":
+    name: "Observation 2171bae3"
+    description: "Наблюдение: Инвалидность"
+  "Observation/df9633a1-3cc7-5c2f-b14e-bdc668a09220":
+    name: "Observation df9633a1"
+    description: "Наблюдение: Порядок установления инвалидности"
+  "Observation/a17da774-83c2-54de-ad91-e890340966d3":
+    name: "Observation a17da774"
+    description: "Наблюдение: Степень утраты профессиональной трудоспособности (%)"
+  "Observation/596b40f9-cebf-5795-a5eb-3b3dbefd8b83":
+    name: "Observation 596b40f9"
+    description: "Наблюдение: Срок, на который установлена степень утраты профессиональной трудоспособности"
+  "Observation/4f1b81b3-b47c-58b5-99c8-4eea9d762f21":
+    name: "Observation 4f1b81b3"
+    description: "Наблюдение: Причина нетрудоспособности"
+  "Observation/d7e37fad-461a-5c76-9891-745f84c222f2":
+    name: "Observation d7e37fad"
+    description: "Наблюдение: Потенциально-опасный для здоровья социальный фактор"
+  "Observation/3488f30b-6e6d-5a47-8d8d-748df9921ab3":
+    name: "Observation 3488f30b"
+    description: "Наблюдение: Вредный производственный фактор"
+  "Observation/5548f634-6f8b-5d6b-9b3a-091d9776c080":
+    name: "Observation 5548f634"
+    description: "Наблюдение: Вредная привычка или зависимость"
+  "Observation/5357012b-11be-5241-8895-e74a74f2eb2a":
+    name: "Observation 5357012b"
+    description: "Наблюдение: Занятость"
+  "AllergyIntolerance/055fb494-f561-548f-9847-f27919fd10a8":
+    name: "AllergyIntolerance 055fb494"
+    description: "Сведения об аллергии: text: Апельсин, грейпфрут, лимон, мандарин; Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor; valueCode: OTH"
+  "Observation/d30d635f-c3b7-5d67-8df1-4aabefccbe72":
+    name: "Observation d30d635f"
+    description: "Наблюдение: Текстовое описание"
+  "Observation/a29e2800-af4e-55ae-906e-6b9e354a1edf":
+    name: "Observation a29e2800"
+    description: "Наблюдение: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown"
+  "PractitionerRole/5eb4b0b6-eb81-5105-9796-3c9db2aa0940":
+    name: "PractitionerRole 5eb4b0b6"
+    description: "Роль медицинского работника: Врач-кардиолог"
+  "Practitioner/b708391e-0452-530c-bed2-ba15e43df511":
+    name: "Practitioner b708391e"
+    description: "Медицинский работник: Смирнов Александр Игоревич"
+  "Observation/f4bb9a07-9c3a-5016-b39c-b277e710c527":
+    name: "Observation f4bb9a07"
+    description: "Наблюдение: Общий анализ крови (базовый)"
+  "Observation/6f377615-032a-5554-b40a-fac5b9935d15":
+    name: "Observation 6f377615"
+    description: "Наблюдение: Ультразвуковое исследование сердца трансторакальное"
+  "MedicationAdministration/4d5ed1f4-e6b3-5c59-b3a6-e52a38ade1b0":
+    name: "MedicationAdministration 4d5ed1f4"
+    description: "Применение препарата"
+  "MedicationStatement/77697241-38b0-55f7-86f6-4db2eb2cdd0e":
+    name: "MedicationStatement 77697241"
+    description: "Сведения о приёме препарата"
+  "Medication/9b6fb832-89d2-5a63-a725-cf9f615d15d5":
+    name: "Medication 9b6fb832"
+    description: "Препарат: Бендазол, таблетки, 20 мг|шт. (таблетка)"
+  "Observation/759d7dfe-c60d-5e4d-903f-d3a83b4ccf4c":
+    name: "Observation 759d7dfe"
+    description: "Наблюдение: Частота пульса"
+  "Observation/a3ad11bd-cfd2-508a-868c-175413dabcd4":
+    name: "Observation a3ad11bd"
+    description: "Наблюдение: Артериальное давление систолическое"
+  "Observation/dfb4b0c2-51b0-5d37-bd83-8909310acfef":
+    name: "Observation dfb4b0c2"
+    description: "Наблюдение: Артериальное давление диастолическое"
+  "Observation/0474875e-5f4f-55ea-8aaf-b9e835ebcc97":
+    name: "Observation 0474875e"
+    description: "Наблюдение: Индекс массы тела"
+  "Observation/293c88dc-21cb-5b7e-ba11-fa9855a061a8":
+    name: "Observation 293c88dc"
+    description: "Наблюдение: Рост"
+  "Observation/bc192cf9-7557-5e57-aaf2-2b69fc336574":
+    name: "Observation bc192cf9"
+    description: "Наблюдение: Масса тела"
+  "Observation/0f7986dc-f770-5474-9224-a8ff1942068a":
+    name: "Observation 0f7986dc"
+    description: "Наблюдение: SCORE"
+  "Observation/6256d6fa-4f54-5243-9bc7-c96dc54e0e88":
+    name: "Observation 6256d6fa"
+    description: "Наблюдение: Интерпретация результатов расчета клинической шкалы или опросника"
+  "Observation/4e13abd8-528e-5e79-b0d6-4a430bc1920c":
+    name: "Observation 4e13abd8"
+    description: "Наблюдение: Параметры клинической шкалы и опросников"
+  "Observation/67beff8c-5a3b-5e40-8021-6be1106f80f7":
+    name: "Observation 67beff8c"
+    description: "Наблюдение: Параметры клинической шкалы и опросников"
+  "Observation/bfac2509-aafa-5097-be68-a7828653ad50":
+    name: "Observation bfac2509"
+    description: "Наблюдение: Параметры клинической шкалы и опросников"
+  "Observation/c7ed8a6c-25ec-5aaa-9207-0110215de4f9":
+    name: "Observation c7ed8a6c"
+    description: "Наблюдение: Параметры клинической шкалы и опросников"
+  "Observation/77a2d0d5-79cd-5163-8283-80fd1ea8c376":
+    name: "Observation 77a2d0d5"
+    description: "Наблюдение: Параметры клинической шкалы и опросников"
+  "Condition/e05101e7-568e-583e-8312-7e5676828998":
+    name: "Condition e05101e7"
+    description: "Диагноз: I11.9 ГБ II стадии. Неконтролируемая АГ. Нарушенная гликемия натощак. Дислипидемия. ГЛЖ. Риск 3 (высокий); Гипертензивная [гипертоническая] болезнь с преимущественным поражением сердца без (застойной) сердечной недостаточности"
+  "Observation/4589e202-7276-590c-9501-f005b08bbc7f":
+    name: "Observation 4589e202"
+    description: "Наблюдение: Дополнительные сведения о заболевании"
+  "Condition/cf6e08bf-da7b-5301-87a9-244858da48c0":
+    name: "Condition cf6e08bf"
+    description: "Диагноз: H35.0 Гипертоническая ретинопатия; Фоновая ретинопатия и ретинальные сосудистые изменения"
+  "Observation/bd5c1752-9d9a-521e-a242-0ddff585c898":
+    name: "Observation bd5c1752"
+    description: "Наблюдение: Характер заболевания"
+  "CarePlan/de69ce75-ba4d-5b82-a0a0-f20e2fecc469":
+    name: "CarePlan de69ce75"
+    description: "Рекомендации: Бисопролол (таблетки, 5 мг) 1 таблетка per os 1 раз в день в течение 1 недели, Стол №10"
+  "Procedure/ca9137b9-daaa-5a8a-8ad4-ed19cbfdd466":
+    name: "Procedure ca9137b9"
+    description: "Медицинская услуга: Прием (осмотр, консультация) врача-кардиолога повторный"
+  "DocumentReference/f93b3d41-afa6-592a-8b7a-2ab46064538d":
+    name: "DocumentReference f93b3d41"
+    description: "Связанный документ: Период освобождения от работы: с 02.05.2025 по 10.05.2025"
+  "Observation/7ffea873-225f-5cd6-830b-cea626139c7e":
+    name: "Observation 7ffea873"
+    description: "Наблюдение: Номер документа"
+  "Observation/786dc9c5-c5b5-5138-9b66-fe215d527dee":
+    name: "Observation 786dc9c5"
+    description: "Наблюдение: Форма документа"
+  "DocumentReference/258e7915-ecff-576e-83e3-ba93a2170f93":
+    name: "DocumentReference 258e7915"
+    description: "Связанный документ"
+  "Observation/78a60a38-9ed8-5e1c-856d-defa4d09e2a5":
+    name: "Observation 78a60a38"
+    description: "Наблюдение: Номер документа"
+  "Observation/a697526d-3715-59a6-9db0-081db40b32a2":
+    name: "Observation a697526d"
+    description: "Наблюдение: Форма документа"
+  "DocumentReference/bff3f780-70ce-5ce0-846f-f1292222152a":
+    name: "DocumentReference bff3f780"
+    description: "Связанный документ"
+  "Observation/21848861-75ee-51f8-87cc-3a21c428fffe":
+    name: "Observation 21848861"
+    description: "Наблюдение: Номер документа"
+  "Observation/8889ba40-b56e-5a0c-9ad0-b6747ba6ecf6":
+    name: "Observation 8889ba40"
+    description: "Наблюдение: Форма документа"
+  "DocumentReference/9e815a07-9a79-520a-8900-37e1e8f47f6f":
+    name: "DocumentReference 9e815a07"
+    description: "Связанный документ"
+  "Observation/29032d0b-f475-5f36-ab32-58c284056566":
+    name: "Observation 29032d0b"
+    description: "Наблюдение: Номер документа"
+  "Observation/82389482-9e34-5c03-854f-1d9573d0851d":
+    name: "Observation 82389482"
+    description: "Наблюдение: Форма документа"
+  "DocumentReference/15db7ba0-8e98-5d1f-9761-69b266757062":
+    name: "DocumentReference 15db7ba0"
+    description: "Связанный документ: Исходный учебный XML из руководства СЭМД 290, редакция 7; без исправлений"
+  Bundle/semd-amb-consultation-example:
+    name: Протокол консультации редакции 7 — учебный пример

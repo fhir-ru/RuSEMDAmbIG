@@ -1,0 +1,17 @@
+{
+  "resourceType": "CarePlan",
+  "id": "de69ce75-ba4d-5b82-a0a0-f20e2fecc469",
+  "status": "unknown",
+  "intent": "proposal",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "description": "Бисопролол (таблетки, 5 мг) 1 таблетка per os 1 раз в день в течение 1 недели, Стол №10",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Рекомендации</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Намерение</td><td>предложение</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Описание</td><td>Бисопролол (таблетки, 5 мг) 1 таблетка per os 1 раз в день в течение 1 недели, Стол №10</td></tr></tbody></table></div>"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "package-id": "ru.semd.amb",
+  "canonical": "https://fhir.ru/ig/semd/amb",
+  "title": "Ru SEMD Amb IG",
+  "introduction": "Проект представления клинического содержания амбулаторного СЭМД в FHIR R5.",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous integration build of the draft IG.",
+      "path": "https://build.fhir.org/ig/fhir-ru/RuSEMDAmbIG",
+      "status": "ci-build",
+      "current": true
+    },
+    {
+      "version": "0.1.0",
+      "date": "2026-10-18",
+      "desc": "Первый проект: СЭМД 290 редакции 7, четыре прикладных профиля и комплектный пример.",
+      "path": "https://fhir.ru/ig/semd/amb/0.1.0",
+      "status": "draft",
+      "sequence": "Draft"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "resourceType": "Condition",
+  "id": "e05101e7-568e-583e-8312-7e5676828998",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "unknown"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.11.1005",
+        "code": "I11.9",
+        "display": "Гипертензивная [гипертоническая] болезнь с преимущественным поражением сердца без (застойной) сердечной недостаточности",
+        "version": "2.27"
+      }
+    ],
+    "text": "I11.9 ГБ II стадии. Неконтролируемая АГ. Нарушенная гликемия натощак. Дислипидемия. ГЛЖ. Риск 3 (высокий)"
+  },
+  "recordedDate": "2025-05-02",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Диагноз</h2><table><tbody><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Клинический статус</td><td>unknown</td></tr><tr><td>Код / содержание</td><td>I11.9 ГБ II стадии. Неконтролируемая АГ. Нарушенная гликемия натощак. Дислипидемия. ГЛЖ. Риск 3 (высокий); Гипертензивная [гипертоническая] болезнь с преимущественным поражением сердца без (застойной) сердечной недостаточности</td></tr><tr><td>Дата записи</td><td>2025-05-02</td></tr></tbody></table></div>"
+  }
+}

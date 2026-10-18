@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "1236f785-eedd-5c03-8e2b-4ace58c740ae",
+  "status": "unknown",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.99.2.166",
+        "code": "811",
+        "display": "Льготная категория",
+        "version": "5.69"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.99.2.541",
+        "code": "1.00000.0216",
+        "display": "Инвалиды III группы",
+        "version": "6.24"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Льготная категория</td></tr><tr><td>Значение</td><td>Инвалиды III группы</td></tr></tbody></table></div>"
+  }
+}

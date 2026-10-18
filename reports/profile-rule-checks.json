@@ -1,0 +1,50 @@
+{
+  "engine": "org.hl7.fhir.r5.fhirpath.FHIRPathEngine from input-cache/publisher.jar",
+  "method": "evaluateToBoolean",
+  "expressions_source": "generated StructureDefinition differential constraints",
+  "passed": true,
+  "checks": [
+    {
+      "expected": true,
+      "passed": true,
+      "expression": "entry.first().resource.is(Composition)",
+      "name": "bundle_positive",
+      "actual": true
+    },
+    {
+      "expected": false,
+      "passed": true,
+      "expression": "entry.first().resource.is(Composition)",
+      "name": "bundle_noncomposition_first_negative",
+      "actual": false
+    },
+    {
+      "expected": true,
+      "passed": true,
+      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())",
+      "name": "smnn_dose_text_positive",
+      "actual": true
+    },
+    {
+      "expected": false,
+      "passed": true,
+      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())",
+      "name": "smnn_dose_text_removed_negative",
+      "actual": false
+    },
+    {
+      "expected": true,
+      "passed": true,
+      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())",
+      "name": "non_smnn_no_text_allowed",
+      "actual": true
+    },
+    {
+      "expected": true,
+      "passed": true,
+      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())",
+      "name": "explicit_unit_no_consumer_text_allowed",
+      "actual": true
+    }
+  ]
+}

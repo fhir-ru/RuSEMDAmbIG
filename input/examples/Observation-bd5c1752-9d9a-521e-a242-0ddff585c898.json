@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "bd5c1752-9d9a-521e-a242-0ddff585c898",
+  "status": "unknown",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.99.2.166",
+        "code": "12014",
+        "display": "Характер заболевания",
+        "version": "5.69"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.11.1049",
+        "code": "1",
+        "display": "Впервые в жизни установленное хроническое",
+        "version": "3.1"
+      }
+    ]
+  },
+  "focus": [
+    {
+      "reference": "urn:uuid:cf6e08bf-da7b-5301-87a9-244858da48c0"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Характер заболевания</td></tr><tr><td>Значение</td><td>Впервые в жизни установленное хроническое</td></tr><tr><td>Относится к</td><td>Диагноз: H35.0 Гипертоническая ретинопатия; Фоновая ретинопатия и ретинальные сосудистые изменения</td></tr></tbody></table></div>"
+  }
+}

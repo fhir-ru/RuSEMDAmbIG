@@ -1,0 +1,62 @@
+{
+  "resourceType": "Coverage",
+  "id": "37d4c64a-7f8e-559c-9a74-08a2716976df",
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/core/StructureDefinition/core-coverage"
+    ]
+  },
+  "status": "draft",
+  "kind": "insurance",
+  "beneficiary": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-sources-of-payment",
+        "code": "1",
+        "display": "Средства обязательного медицинского страхования"
+      },
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.11.1039",
+        "code": "1",
+        "display": "Средства обязательного медицинского страхования",
+        "version": "5.3"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.ru/ig/core/systems/oms",
+      "value": "ЧБ 1344600",
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-coverage-document",
+            "code": "1",
+            "display": "Полис ОМС",
+            "version": "1.1"
+          },
+          {
+            "system": "urn:oid:1.2.643.5.1.13.13.11.1035",
+            "code": "1",
+            "display": "Полис ОМС старого образца",
+            "version": "1.3"
+          }
+        ]
+      }
+    }
+  ],
+  "period": {
+    "start": "2018-05-11",
+    "end": "2028-05-12"
+  },
+  "insurer": {
+    "reference": "urn:uuid:19baeed8-1e27-5c4c-82cc-3d211b841405"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Страховое обеспечение</h2><table><tbody><tr><td>Статус</td><td>черновик</td></tr><tr><td>Вид</td><td>страхование</td></tr><tr><td>Застрахованный</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Тип</td><td>Средства обязательного медицинского страхования</td></tr><tr><td>Идентификатор</td><td>Полис ОМС; Полис ОМС старого образца: ЧБ 1344600 [https://fhir.ru/ig/core/systems/oms]</td></tr><tr><td>Период</td><td>Начало: 2018-05-11; Окончание: 2028-05-12</td></tr><tr><td>Страховая организация</td><td>Организация: ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;СТРАХОВАЯ КОМПАНИЯ &quot;ИНГОССТРАХ-М&quot;</td></tr></tbody></table></div>"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "2463646b-3dc4-56d6-9cca-f9848d144ee4",
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/core/StructureDefinition/core-practitionerrole"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Роль медицинского работника</h2><table><tbody></tbody></table></div>"
+  }
+}

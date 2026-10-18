@@ -1,0 +1,23 @@
+{
+  "resourceType": "Practitioner",
+  "id": "b708391e-0452-530c-bed2-ba15e43df511",
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/core/StructureDefinition/core-practitioner"
+    ]
+  },
+  "name": [
+    {
+      "use": "official",
+      "family": "Смирнов",
+      "given": [
+        "Александр",
+        "Игоревич"
+      ]
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Медицинский работник</h2><table><tbody><tr><td>Имя / наименование</td><td>Смирнов Александр Игоревич</td></tr></tbody></table></div>"
+  }
+}

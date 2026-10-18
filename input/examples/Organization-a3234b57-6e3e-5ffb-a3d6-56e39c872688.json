@@ -1,0 +1,115 @@
+{
+  "resourceType": "Organization",
+  "id": "a3234b57-6e3e-5ffb-a3d6-56e39c872688",
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+    ]
+  },
+  "name": "ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ \"ГОРОДСКАЯ ПОЛИКЛИНИКА № 64 ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ\"",
+  "identifier": [
+    {
+      "system": "https://fhir.ru/ig/core/systems/frmo",
+      "value": "1.2.643.5.1.13.13.12.2.77.7831"
+    },
+    {
+      "system": "https://fhir.ru/ig/core/systems/ogrn",
+      "value": "1027739578404"
+    },
+    {
+      "system": "https://fhir.ru/ig/core/systems/okpo",
+      "value": "5009247"
+    }
+  ],
+  "qualification": [
+    {
+      "code": {
+        "text": "Лицензия на осуществление медицинской деятельности"
+      },
+      "identifier": [
+        {
+          "system": "https://fhir.ru/ig/core/systems/medlicense",
+          "value": "ЛО-77-01-019710",
+          "assigner": {
+            "display": "Департамент здравоохранения г. Москвы. Дата регистрации: 26.01.2023г."
+          }
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.ru/ig/core/StructureDefinition/okato",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-okato",
+            "code": "45263594000"
+          }
+        ]
+      }
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+74953754826",
+          "use": "work"
+        },
+        {
+          "system": "email",
+          "value": "gp129@zdrav.mos.ru"
+        }
+      ],
+      "address": {
+        "text": "г Москва, ул Ладожская, д 4-6 стр 1",
+        "postalCode": "105005",
+        "extension": [
+          {
+            "url": "https://fhir.ru/ig/core/StructureDefinition/regionRF",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-region-rf",
+                  "code": "77",
+                  "display": "г. Москва"
+                },
+                {
+                  "system": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                  "code": "77",
+                  "display": "г. Москва",
+                  "version": "6.5"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.ru/ig/core/StructureDefinition/fias",
+            "extension": [
+              {
+                "url": "aoguid",
+                "valueIdentifier": {
+                  "system": "urn:hl7-ru:fias:aoguid",
+                  "value": "212d3123-9c4d-4579-b31a-b5c6e9632b04"
+                }
+              },
+              {
+                "url": "houseguid",
+                "valueIdentifier": {
+                  "system": "urn:hl7-ru:fias:houseguid",
+                  "value": "e59f1e55-75c8-4037-9615-ed7ce751b745"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Организация</h2><table><tbody><tr><td>Имя / наименование</td><td>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ &quot;ГОРОДСКАЯ ПОЛИКЛИНИКА № 64 ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ&quot;</td></tr><tr><td>Идентификатор</td><td>1.2.643.5.1.13.13.12.2.77.7831 [https://fhir.ru/ig/core/systems/frmo]; 1027739578404 [https://fhir.ru/ig/core/systems/ogrn]; 5009247 [https://fhir.ru/ig/core/systems/okpo]</td></tr><tr><td>Квалификация / лицензия</td><td>Код / содержание: text: Лицензия на осуществление медицинской деятельности; Идентификатор: ЛО-77-01-019710 [https://fhir.ru/ig/core/systems/medlicense]</td></tr><tr><td>Дополнительные сведения</td><td>url: https://fhir.ru/ig/core/StructureDefinition/okato; Значение: 45263594000</td></tr><tr><td>Контактные сведения</td><td>Контакт: +74953754826 [phone]; gp129@zdrav.mos.ru [email]; Адрес: text: г Москва, ул Ладожская, д 4-6 стр 1; postalCode: 105005; Дополнительные сведения: url: https://fhir.ru/ig/core/StructureDefinition/regionRF; Значение: г. Москва; https://fhir.ru/ig/core/StructureDefinition/fias; Дополнительные сведения: url: aoguid; valueIdentifier: 212d3123-9c4d-4579-b31a-b5c6e9632b04 [urn:hl7-ru:fias:aoguid]; url: houseguid; valueIdentifier: e59f1e55-75c8-4037-9615-ed7ce751b745 [urn:hl7-ru:fias:houseguid]</td></tr></tbody></table></div>"
+  }
+}

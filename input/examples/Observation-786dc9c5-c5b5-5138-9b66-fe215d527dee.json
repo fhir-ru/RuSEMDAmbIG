@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "786dc9c5-c5b5-5138-9b66-fe215d527dee",
+  "status": "unknown",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.99.2.166",
+        "code": "6058",
+        "display": "Форма документа",
+        "version": "5.69"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.99.2.1008",
+        "code": "2",
+        "display": "Бумажная",
+        "version": "1.1"
+      }
+    ]
+  },
+  "focus": [
+    {
+      "reference": "urn:uuid:f93b3d41-afa6-592a-8b7a-2ab46064538d"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Форма документа</td></tr><tr><td>Значение</td><td>Бумажная</td></tr><tr><td>Относится к</td><td>Связанный документ: Период освобождения от работы: с 02.05.2025 по 10.05.2025</td></tr></tbody></table></div>"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "resourceType": "Medication",
+  "id": "9b6fb832-89d2-5a63-a725-cf9f615d15d5",
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.99.2.611",
+        "code": "21.20.10.144-000001-1-00021-0000000000000",
+        "display": "Бендазол, таблетки, 20 мг|шт. (таблетка)",
+        "version": "5.123"
+      }
+    ]
+  },
+  "doseForm": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.11.1466",
+        "code": "1132",
+        "display": "Таблетки, покрытые оболочкой",
+        "version": "3.1"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Препарат</h2><table><tbody><tr><td>Код / содержание</td><td>Бендазол, таблетки, 20 мг|шт. (таблетка)</td></tr><tr><td>Лекарственная форма</td><td>Таблетки, покрытые оболочкой</td></tr></tbody></table></div>"
+  }
+}

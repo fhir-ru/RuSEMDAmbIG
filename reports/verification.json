@@ -1,0 +1,128 @@
+{
+  "scope": "Single frozen official edition-7 XML example; this is not a FHIR Validator result and does not demonstrate coverage of all guide variants.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "frozen_source_and_manifest_integrity",
+      "passed": true,
+      "detail": {
+        "xml_sha256": "17b477cafad0231ddc2140fe9e27beaaa7224155dec3622ccfb1a4e54c7bb1e8",
+        "original_archive_sha256": "a3bee77951ce2395326637dddcc6217f2536af3014e3861dc0689193413622e8",
+        "scope": "XML only; archive provenance verified before extraction in RuCore experiment"
+      }
+    },
+    {
+      "name": "deterministic_conversion",
+      "passed": true,
+      "detail": "Two fresh imported conversions equal saved Bundle"
+    },
+    {
+      "name": "all_source_scalars_and_trace_targets_resolve",
+      "passed": true,
+      "detail": {
+        "source_scalars": 1268,
+        "resolved_targets": 943
+      }
+    },
+    {
+      "name": "resource_identity_unique_and_references_closed",
+      "passed": true,
+      "detail": {
+        "resources": 78,
+        "references": 207
+      }
+    },
+    {
+      "name": "all_sections_and_ST_content_preserved",
+      "passed": true,
+      "detail": {
+        "sections": 20,
+        "ST_values": 16
+      }
+    },
+    {
+      "name": "two_conditions_encounter_axes_and_date",
+      "passed": true,
+      "detail": [
+        "H35.0",
+        "I11.9"
+      ]
+    },
+    {
+      "name": "direct_service_code_time_no_invented_recorder",
+      "passed": true,
+      "detail": {
+        "code": "B01.015.002",
+        "time": "2025-05-02T15:45:00+03:00"
+      }
+    },
+    {
+      "name": "three_REFR_links_resolve_full_local_II",
+      "passed": true,
+      "detail": {
+        "resolved_full_II_links": 3,
+        "LINKDOCS_records": 4
+      }
+    },
+    {
+      "name": "disability_PINF_not_unknown",
+      "passed": true,
+      "detail": "Known start and explicitly unbounded end retained"
+    },
+    {
+      "name": "diagnostic_allergen_administration_without_consultation_encounter",
+      "passed": true,
+      "detail": {
+        "resource": "MedicationAdministration",
+        "code_retained": "1",
+        "date_retained": "2025-05-01",
+        "encounter": null,
+        "unknown_product_control": "explicit rejection"
+      }
+    },
+    {
+      "name": "dose_has_no_invented_unit_and_period_is_hours",
+      "passed": true,
+      "detail": {
+        "dose": {
+          "value": 1.0
+        },
+        "text": "Разовая доза — 1 потребительская единица указанного препарата (количество в единицах выбранного узла СМНН).",
+        "period": 12.0,
+        "periodUnit": "h"
+      }
+    },
+    {
+      "name": "card_logical_reference_without_invented_namespace",
+      "passed": true,
+      "detail": {
+        "number": "5499-16",
+        "source_type": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.643.5.1.13.13.99.2.723",
+              "code": "1",
+              "display": "Амбулаторная медицинская карта",
+              "version": "1.1"
+            }
+          ]
+        },
+        "system_supplied": false,
+        "missing_number_control": "no partOf inferred"
+      }
+    },
+    {
+      "name": "consumer_unit_rule_has_explicit_scope",
+      "passed": true,
+      "detail": {
+        "controls": "explicit unit and other code system do not receive consumer-unit explanation"
+      }
+    },
+    {
+      "name": "original_XML_embedded_byte_exact",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "unresolved_semantic_gaps": []
+}

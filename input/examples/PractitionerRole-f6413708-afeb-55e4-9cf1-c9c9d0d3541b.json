@@ -1,0 +1,61 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "f6413708-afeb-55e4-9cf1-c9c9d0d3541b",
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.643.5.1.13.3.25.77.50.100.1.1.70",
+      "value": "183640",
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-semd-identifier-type",
+            "code": "mis-practitioner-role"
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/core/StructureDefinition/core-practitionerrole"
+    ]
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-medical-workers-positions",
+          "code": "109",
+          "display": "Врач-терапевт"
+        },
+        {
+          "system": "urn:oid:1.2.643.5.1.13.13.11.1002",
+          "code": "109",
+          "display": "Врач-терапевт",
+          "version": "9.12"
+        }
+      ]
+    }
+  ],
+  "practitioner": {
+    "reference": "urn:uuid:f495d057-78ff-5521-9730-c226d2e47416"
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+79065184597",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "organization": {
+    "reference": "urn:uuid:64e05ea1-f760-5cf4-8392-c4e1ed67b6de"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Роль медицинского работника</h2><table><tbody><tr><td>Идентификатор</td><td>mis-practitioner-role: 183640 [urn:oid:1.2.643.5.1.13.3.25.77.50.100.1.1.70]</td></tr><tr><td>Код / содержание</td><td>Врач-терапевт</td></tr><tr><td>Медицинский работник</td><td>Медицинский работник: Кузнецов Дмитрий Олегович</td></tr><tr><td>Контактные сведения</td><td>Контакт: +79065184597 [phone]</td></tr><tr><td>Организация</td><td>Организация: Государственное бюджетное учреждение здравоохранения города Москвы &quot;Городская поликлиника №164 Департамент здравоохранения города Москвы&quot;</td></tr></tbody></table></div>"
+  }
+}

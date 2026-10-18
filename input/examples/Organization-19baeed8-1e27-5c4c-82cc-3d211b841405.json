@@ -1,0 +1,86 @@
+{
+  "resourceType": "Organization",
+  "id": "19baeed8-1e27-5c4c-82cc-3d211b841405",
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+    ]
+  },
+  "name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СТРАХОВАЯ КОМПАНИЯ \"ИНГОССТРАХ-М\"",
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.643.5.1.13.13.99.2.183",
+      "value": "77013"
+    },
+    {
+      "system": "https://fhir.ru/ig/core/systems/inn",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "TAX"
+          }
+        ]
+      },
+      "value": "213546789"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+74957295571",
+          "use": "work"
+        }
+      ],
+      "address": {
+        "text": "г Москва, ул Рочдельская, д 15 стр 35",
+        "postalCode": "123376",
+        "extension": [
+          {
+            "url": "https://fhir.ru/ig/core/StructureDefinition/regionRF",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-region-rf",
+                  "code": "77",
+                  "display": "г. Москва"
+                },
+                {
+                  "system": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                  "code": "77",
+                  "display": "г. Москва",
+                  "version": "6.5"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.ru/ig/core/StructureDefinition/fias",
+            "extension": [
+              {
+                "url": "aoguid",
+                "valueIdentifier": {
+                  "system": "urn:hl7-ru:fias:aoguid",
+                  "value": "6bfbfcbb-87a7-4674-a8e5-bf5f1bbfbf92"
+                }
+              },
+              {
+                "url": "houseguid",
+                "valueIdentifier": {
+                  "system": "urn:hl7-ru:fias:houseguid",
+                  "value": "0b33a0e1-3427-409a-a3b7-e57716819f38"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Организация</h2><table><tbody><tr><td>Имя / наименование</td><td>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;СТРАХОВАЯ КОМПАНИЯ &quot;ИНГОССТРАХ-М&quot;</td></tr><tr><td>Идентификатор</td><td>77013 [urn:oid:1.2.643.5.1.13.13.99.2.183]; TAX: 213546789 [https://fhir.ru/ig/core/systems/inn]</td></tr><tr><td>Контактные сведения</td><td>Контакт: +74957295571 [phone]; Адрес: text: г Москва, ул Рочдельская, д 15 стр 35; postalCode: 123376; Дополнительные сведения: url: https://fhir.ru/ig/core/StructureDefinition/regionRF; Значение: г. Москва; https://fhir.ru/ig/core/StructureDefinition/fias; Дополнительные сведения: url: aoguid; valueIdentifier: 6bfbfcbb-87a7-4674-a8e5-bf5f1bbfbf92 [urn:hl7-ru:fias:aoguid]; url: houseguid; valueIdentifier: 0b33a0e1-3427-409a-a3b7-e57716819f38 [urn:hl7-ru:fias:houseguid]</td></tr></tbody></table></div>"
+  }
+}

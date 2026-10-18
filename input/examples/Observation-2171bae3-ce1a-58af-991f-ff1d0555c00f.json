@@ -1,0 +1,51 @@
+{
+  "resourceType": "Observation",
+  "id": "2171bae3-ce1a-58af-991f-ff1d0555c00f",
+  "status": "unknown",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.99.2.166",
+        "code": "814",
+        "display": "Инвалидность",
+        "version": "5.69"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2014-10-22",
+    "_end": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor",
+          "valueCode": "PINF"
+        }
+      ]
+    }
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.11.1053",
+        "code": "3",
+        "display": "Третья группа",
+        "version": "3.4"
+      }
+    ]
+  },
+  "hasMember": [
+    {
+      "reference": "urn:uuid:df9633a1-3cc7-5c2f-b14e-bdc668a09220"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Инвалидность</td></tr><tr><td>Период</td><td>Начало: 2014-10-22; _end: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor; valueCode: PINF</td></tr><tr><td>Значение</td><td>Третья группа</td></tr><tr><td>Связанные наблюдения</td><td>Наблюдение: Порядок установления инвалидности</td></tr></tbody></table></div>"
+  }
+}

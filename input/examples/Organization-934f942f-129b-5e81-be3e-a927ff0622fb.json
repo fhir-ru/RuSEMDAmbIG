@@ -1,0 +1,20 @@
+{
+  "resourceType": "Organization",
+  "id": "934f942f-129b-5e81-be3e-a927ff0622fb",
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+    ]
+  },
+  "name": "Министерство здравоохранения Российской Федерации",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.643.5.1.13"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Организация</h2><table><tbody><tr><td>Имя / наименование</td><td>Министерство здравоохранения Российской Федерации</td></tr><tr><td>Идентификатор</td><td>urn:oid:1.2.643.5.1.13 [urn:ietf:rfc:3986]</td></tr></tbody></table></div>"
+  }
+}

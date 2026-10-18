@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "703c744b-9dec-51c2-9613-26bdbe82c2aa",
+  "status": "unknown",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.99.2.166",
+        "code": "801",
+        "display": "Место проведения",
+        "version": "5.69"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.11.1008",
+        "code": "1",
+        "display": "Амбулаторно-поликлиническое учреждение",
+        "version": "5.1"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Место проведения</td></tr><tr><td>Значение</td><td>Амбулаторно-поликлиническое учреждение</td></tr></tbody></table></div>"
+  }
+}

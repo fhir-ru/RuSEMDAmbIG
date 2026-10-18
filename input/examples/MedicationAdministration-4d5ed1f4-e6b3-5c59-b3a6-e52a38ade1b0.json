@@ -1,0 +1,30 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "4d5ed1f4-e6b3-5c59-b3a6-e52a38ade1b0",
+  "status": "completed",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "medication": {
+    "concept": {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.643.5.1.13.13.11.1078",
+          "code": "1",
+          "display": "Аллерген туберкулезный рекомбинантный в стандартном разведении|Диаскинтест|Генериум АО",
+          "version": "6.5"
+        }
+      ]
+    }
+  },
+  "occurenceDateTime": "2025-05-01",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Применение препарата</h2><table><tbody><tr><td>Статус</td><td>выполнено</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Препарат</td><td>concept: Аллерген туберкулезный рекомбинантный в стандартном разведении|Диаскинтест|Генериум АО</td></tr><tr><td>Дата / время применения</td><td>2025-05-01</td></tr></tbody></table></div>"
+  },
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-medication-administration"
+    ]
+  }
+}

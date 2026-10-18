@@ -1,0 +1,52 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "9e815a07-9a79-520a-8900-37e1e8f47f6f",
+  "status": "current",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.51",
+      "value": "459481541"
+    },
+    {
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.11.1522",
+        "code": "6",
+        "display": "Протокол инструментального исследования",
+        "version": "9.1"
+      }
+    ]
+  },
+  "content": [
+    {
+      "attachment": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "unknown"
+          }
+        ],
+        "title": "Ссылка из CDA; содержимое документа не включено в источник",
+        "creation": "2025-04-02"
+      }
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Связанный документ</h2><table><tbody><tr><td>Статус</td><td>актуальная запись</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Идентификатор</td><td>459481541 [urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.51]; _value: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown</td></tr><tr><td>Тип</td><td>Протокол инструментального исследования</td></tr><tr><td>Содержимое</td><td>Вложение: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown; Название: Ссылка из CDA; содержимое документа не включено в источник; Дата создания: 2025-04-02</td></tr></tbody></table></div>"
+  }
+}

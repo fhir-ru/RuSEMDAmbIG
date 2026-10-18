@@ -1,0 +1,61 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "8919e25d-1c2b-5987-ac36-2c90c389b3a6",
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.70",
+      "value": "542174",
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-semd-identifier-type",
+            "code": "mis-practitioner-role"
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/core/StructureDefinition/core-practitionerrole"
+    ]
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-medical-workers-positions",
+          "code": "34",
+          "display": "Врач-кардиолог"
+        },
+        {
+          "system": "urn:oid:1.2.643.5.1.13.13.11.1002",
+          "code": "34",
+          "display": "Врач-кардиолог",
+          "version": "9.12"
+        }
+      ]
+    }
+  ],
+  "practitioner": {
+    "reference": "urn:uuid:145fad7a-f3e5-562b-808f-e23e082845e1"
+  },
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+74957443256",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "organization": {
+    "reference": "urn:uuid:1e12cf95-0196-5d36-863a-956ed52bfa05"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Роль медицинского работника</h2><table><tbody><tr><td>Идентификатор</td><td>mis-practitioner-role: 542174 [urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.70]</td></tr><tr><td>Код / содержание</td><td>Врач-кардиолог</td></tr><tr><td>Медицинский работник</td><td>Медицинский работник: Смирнов Александр Игоревич</td></tr><tr><td>Контактные сведения</td><td>Контакт: +74957443256 [phone]</td></tr><tr><td>Организация</td><td>Организация: ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ &quot;ГОРОДСКАЯ ПОЛИКЛИНИКА № 64 ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ&quot;</td></tr></tbody></table></div>"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "resourceType": "Observation",
+  "id": "a17da774-83c2-54de-ad91-e890340966d3",
+  "status": "unknown",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.99.2.166",
+        "code": "4058",
+        "display": "Степень утраты профессиональной трудоспособности (%)",
+        "version": "5.69"
+      }
+    ]
+  },
+  "_effectiveDateTime": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "not-applicable"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "value": 30.0,
+    "system": "urn:oid:1.2.643.5.1.13.13.11.1358",
+    "code": "53",
+    "unit": "%",
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+        "valueQuantity": {
+          "value": 30.0,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    ]
+  },
+  "hasMember": [
+    {
+      "reference": "urn:uuid:596b40f9-cebf-5795-a5eb-3b3dbefd8b83"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Степень утраты профессиональной трудоспособности (%)</td></tr><tr><td>_effectiveDateTime</td><td>Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: not-applicable</td></tr><tr><td>Значение</td><td>30.0 %</td></tr><tr><td>Связанные наблюдения</td><td>Наблюдение: Срок, на который установлена степень утраты профессиональной трудоспособности</td></tr></tbody></table></div>"
+  }
+}

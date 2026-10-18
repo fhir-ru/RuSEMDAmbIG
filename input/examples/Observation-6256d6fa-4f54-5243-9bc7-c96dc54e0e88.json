@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "6256d6fa-4f54-5243-9bc7-c96dc54e0e88",
+  "status": "unknown",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.99.2.166",
+        "code": "8019",
+        "display": "Интерпретация результатов расчета клинической шкалы или опросника",
+        "version": "5.69"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.11.1516",
+        "code": "803",
+        "display": "Высокий риск",
+        "version": "5.30"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Интерпретация результатов расчета клинической шкалы или опросника</td></tr><tr><td>Значение</td><td>Высокий риск</td></tr></tbody></table></div>"
+  }
+}

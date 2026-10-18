@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "759d7dfe-c60d-5e4d-903f-d3a83b4ccf4c",
+  "status": "unknown",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.99.2.262",
+        "code": "5",
+        "display": "Частота пульса",
+        "version": "8.14"
+      }
+    ]
+  },
+  "effectiveDateTime": "2025-05-02T15:35:00+03:00",
+  "valueQuantity": {
+    "value": 100.0,
+    "system": "urn:oid:1.2.643.5.1.13.13.11.1358",
+    "code": "337",
+    "unit": "1/мин",
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+        "valueQuantity": {
+          "value": 100.0,
+          "unit": "1/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "1/min"
+        }
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Частота пульса</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:35:00+03:00</td></tr><tr><td>Значение</td><td>100.0 1/мин</td></tr></tbody></table></div>"
+  }
+}

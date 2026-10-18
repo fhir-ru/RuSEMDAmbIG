@@ -1,0 +1,9 @@
+{
+  "ru.core": {
+    "version": "0.26.0",
+    "file": "ru.core-0.26.0.tgz",
+    "sha256": "8319ec37b4d2cb42fb92e41d4c738c8e1b5f94bf401ef608d6c743a66cf0ce5b",
+    "retrieved": "2026-10-18",
+    "source": "https://build.fhir.org/ig/fhir-ru/RuCoreIG/package.tgz"
+  }
+}

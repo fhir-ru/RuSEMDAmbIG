@@ -1,0 +1,74 @@
+{
+  "resourceType": "Practitioner",
+  "id": "f495d057-78ff-5521-9730-c226d2e47416",
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/core/StructureDefinition/core-practitioner"
+    ]
+  },
+  "name": [
+    {
+      "use": "official",
+      "family": "Кузнецов",
+      "given": [
+        "Дмитрий",
+        "Олегович"
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://fhir.ru/ig/core/systems/snils",
+      "value": "52415372312"
+    }
+  ],
+  "address": [
+    {
+      "text": "г Москва, ул Миклухо-Маклая, д 10",
+      "postalCode": "117198",
+      "extension": [
+        {
+          "url": "https://fhir.ru/ig/core/StructureDefinition/regionRF",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-region-rf",
+                "code": "77",
+                "display": "г. Москва"
+              },
+              {
+                "system": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                "code": "77",
+                "display": "г. Москва",
+                "version": "6.5"
+              }
+            ]
+          }
+        },
+        {
+          "url": "https://fhir.ru/ig/core/StructureDefinition/fias",
+          "extension": [
+            {
+              "url": "aoguid",
+              "valueIdentifier": {
+                "system": "urn:hl7-ru:fias:aoguid",
+                "value": "1dec06af-f015-425b-be4b-253fab5d7ccb"
+              }
+            },
+            {
+              "url": "houseguid",
+              "valueIdentifier": {
+                "system": "urn:hl7-ru:fias:houseguid",
+                "value": "b1adc7d0-8160-47d0-9903-d794b72078f6"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Медицинский работник</h2><table><tbody><tr><td>Имя / наименование</td><td>Кузнецов Дмитрий Олегович</td></tr><tr><td>Идентификатор</td><td>52415372312 [https://fhir.ru/ig/core/systems/snils]</td></tr><tr><td>Адрес</td><td>text: г Москва, ул Миклухо-Маклая, д 10; postalCode: 117198; Дополнительные сведения: url: https://fhir.ru/ig/core/StructureDefinition/regionRF; Значение: г. Москва; https://fhir.ru/ig/core/StructureDefinition/fias; Дополнительные сведения: url: aoguid; valueIdentifier: 1dec06af-f015-425b-be4b-253fab5d7ccb [urn:hl7-ru:fias:aoguid]; url: houseguid; valueIdentifier: b1adc7d0-8160-47d0-9903-d794b72078f6 [urn:hl7-ru:fias:houseguid]</td></tr></tbody></table></div>"
+  }
+}

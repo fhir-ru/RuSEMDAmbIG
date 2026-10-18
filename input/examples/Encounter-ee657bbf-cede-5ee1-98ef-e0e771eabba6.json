@@ -1,0 +1,155 @@
+{
+  "resourceType": "Encounter",
+  "id": "ee657bbf-cede-5ee1-98ef-e0e771eabba6",
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/core/StructureDefinition/core-encounter"
+    ]
+  },
+  "status": "unknown",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "serviceProvider": {
+    "reference": "urn:uuid:a3234b57-6e3e-5ffb-a3d6-56e39c872688"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.15",
+      "value": "5469-16",
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-semd-identifier-type",
+            "code": "mis-encounter"
+          }
+        ]
+      }
+    }
+  ],
+  "partOf": {
+    "type": "Encounter",
+    "identifier": {
+      "value": "5499-16",
+      "type": {
+        "coding": [
+          {
+            "system": "urn:oid:1.2.643.5.1.13.13.99.2.723",
+            "code": "1",
+            "display": "Амбулаторная медицинская карта",
+            "version": "1.1"
+          }
+        ]
+      }
+    },
+    "display": "Амбулаторная медицинская карта № 5499-16"
+  },
+  "actualPeriod": {
+    "start": "2025-05-02T15:30:00+03:00",
+    "end": "2025-05-02T15:30:00+03:00"
+  },
+  "class": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.643.5.1.13.13.99.2.322",
+          "code": "2",
+          "display": "Амбулаторно, в том числе на дому при вызове медицинского работника",
+          "version": "3.1"
+        }
+      ]
+    }
+  ],
+  "priority": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.11.1551",
+        "code": "1",
+        "display": "плановая",
+        "version": "1.1"
+      }
+    ]
+  },
+  "serviceType": [
+    {
+      "concept": {
+        "coding": [
+          {
+            "system": "urn:oid:1.2.643.5.1.13.13.11.1034",
+            "code": "2",
+            "display": "Первичная врачебная медико-санитарная помощь",
+            "version": "4.2"
+          }
+        ]
+      }
+    }
+  ],
+  "diagnosis": [
+    {
+      "condition": [
+        {
+          "reference": {
+            "reference": "urn:uuid:e05101e7-568e-583e-8312-7e5676828998"
+          }
+        }
+      ],
+      "use": [
+        {
+          "coding": [
+            {
+              "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-diagnosis-nosology-kind",
+              "code": "1",
+              "display": "Основное заболевание",
+              "version": "2.2"
+            }
+          ]
+        },
+        {
+          "coding": [
+            {
+              "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-diagnosis-justification-degree",
+              "code": "3",
+              "display": "Заключительный клинический диагноз",
+              "version": "3.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "condition": [
+        {
+          "reference": {
+            "reference": "urn:uuid:cf6e08bf-da7b-5301-87a9-244858da48c0"
+          }
+        }
+      ],
+      "use": [
+        {
+          "coding": [
+            {
+              "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-diagnosis-nosology-kind",
+              "code": "2",
+              "display": "Осложнение основного заболевания",
+              "version": "2.2"
+            }
+          ]
+        },
+        {
+          "coding": [
+            {
+              "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-diagnosis-justification-degree",
+              "code": "3",
+              "display": "Заключительный клинический диагноз",
+              "version": "3.1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Посещение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Организация посещения</td><td>Организация: ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ &quot;ГОРОДСКАЯ ПОЛИКЛИНИКА № 64 ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ&quot;</td></tr><tr><td>Идентификатор</td><td>mis-encounter: 5469-16 [urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.15]</td></tr><tr><td>Часть / карта</td><td>Тип: Encounter; Идентификатор: Амбулаторная медицинская карта: 5499-16; display: Амбулаторная медицинская карта № 5499-16</td></tr><tr><td>Период посещения</td><td>Начало: 2025-05-02T15:30:00+03:00; Окончание: 2025-05-02T15:30:00+03:00</td></tr><tr><td>Условия оказания помощи</td><td>Амбулаторно, в том числе на дому при вызове медицинского работника</td></tr><tr><td>Срочность</td><td>плановая</td></tr><tr><td>Вид помощи</td><td>concept: Первичная врачебная медико-санитарная помощь</td></tr><tr><td>Диагноз</td><td>Состояние: reference: Диагноз: I11.9 ГБ II стадии. Неконтролируемая АГ. Нарушенная гликемия натощак. Дислипидемия. ГЛЖ. Риск 3 (высокий); Гипертензивная [гипертоническая] болезнь с преимущественным поражением сердца без (застойной) сердечной недостаточности; Роль / назначение: Основное заболевание; Заключительный клинический диагноз; Состояние: reference: Диагноз: H35.0 Гипертоническая ретинопатия; Фоновая ретинопатия и ретинальные сосудистые изменения; Роль / назначение: Осложнение основного заболевания; Заключительный клинический диагноз</td></tr></tbody></table></div>"
+  }
+}

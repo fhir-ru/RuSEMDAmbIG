@@ -1,0 +1,75 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "77697241-38b0-55f7-86f6-4db2eb2cdd0e",
+  "status": "recorded",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "medication": {
+    "concept": {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.643.5.1.13.13.99.2.611",
+          "code": "21.20.10.144-000001-1-00021-0000000000000",
+          "display": "Бендазол, таблетки, 20 мг|шт. (таблетка)",
+          "version": "5.123"
+        }
+      ]
+    },
+    "reference": {
+      "reference": "urn:uuid:9b6fb832-89d2-5a63-a725-cf9f615d15d5"
+    }
+  },
+  "effectivePeriod": {
+    "start": "2025-05-02",
+    "end": "2025-05-09"
+  },
+  "dosage": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 1.0
+          }
+        }
+      ],
+      "text": "Разовая доза — 1 потребительская единица указанного препарата (количество в единицах выбранного узла СМНН).",
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 12.0,
+          "periodUnit": "h",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/timing-exact",
+              "valueBoolean": true
+            }
+          ]
+        }
+      },
+      "patientInstruction": "2 часа до или через 2 часа после приема пищи",
+      "route": {
+        "coding": [
+          {
+            "system": "urn:oid:1.2.643.5.1.13.13.11.1468",
+            "code": "2",
+            "display": "Пероральный",
+            "version": "2.3"
+          }
+        ]
+      }
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Сведения о приёме препарата</h2><table><tbody><tr><td>Статус</td><td>записано</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Препарат</td><td>concept: Бендазол, таблетки, 20 мг|шт. (таблетка); reference: Препарат: Бендазол, таблетки, 20 мг|шт. (таблетка)</td></tr><tr><td>Период</td><td>Начало: 2025-05-02; Окончание: 2025-05-09</td></tr><tr><td>Дозировка</td><td>Разовая доза: Количество: 1.0; text: Разовая доза — 1 потребительская единица указанного препарата (количество в единицах выбранного узла СМНН).; Расписание: Повторение: Число приёмов: 1; Период: 12.0; Единица интервала: h; Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/timing-exact; Значение: да; Условия приёма: 2 часа до или через 2 часа после приема пищи; Путь введения: Пероральный</td></tr></tbody></table></div>"
+  },
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-medication-statement"
+    ]
+  }
+}

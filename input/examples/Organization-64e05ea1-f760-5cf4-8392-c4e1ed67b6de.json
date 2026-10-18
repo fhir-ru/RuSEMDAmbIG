@@ -1,0 +1,74 @@
+{
+  "resourceType": "Organization",
+  "id": "64e05ea1-f760-5cf4-8392-c4e1ed67b6de",
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+    ]
+  },
+  "name": "Государственное бюджетное учреждение здравоохранения города Москвы \"Городская поликлиника №164 Департамент здравоохранения города Москвы\"",
+  "identifier": [
+    {
+      "system": "https://fhir.ru/ig/core/systems/frmo",
+      "value": "1.2.643.5.1.13.13.12.2.77.7893"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+74954342582",
+          "use": "work"
+        }
+      ],
+      "address": {
+        "text": "г Москва, ул Миклухо-Маклая, д 10",
+        "postalCode": "117198",
+        "extension": [
+          {
+            "url": "https://fhir.ru/ig/core/StructureDefinition/regionRF",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-region-rf",
+                  "code": "77",
+                  "display": "г. Москва"
+                },
+                {
+                  "system": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                  "code": "77",
+                  "display": "г. Москва",
+                  "version": "6.5"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.ru/ig/core/StructureDefinition/fias",
+            "extension": [
+              {
+                "url": "aoguid",
+                "valueIdentifier": {
+                  "system": "urn:hl7-ru:fias:aoguid",
+                  "value": "1dec06af-f015-425b-be4b-253fab5d7ccb"
+                }
+              },
+              {
+                "url": "houseguid",
+                "valueIdentifier": {
+                  "system": "urn:hl7-ru:fias:houseguid",
+                  "value": "b1adc7d0-8160-47d0-9903-d794b72078f6"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Организация</h2><table><tbody><tr><td>Имя / наименование</td><td>Государственное бюджетное учреждение здравоохранения города Москвы &quot;Городская поликлиника №164 Департамент здравоохранения города Москвы&quot;</td></tr><tr><td>Идентификатор</td><td>1.2.643.5.1.13.13.12.2.77.7893 [https://fhir.ru/ig/core/systems/frmo]</td></tr><tr><td>Контактные сведения</td><td>Контакт: +74954342582 [phone]; Адрес: text: г Москва, ул Миклухо-Маклая, д 10; postalCode: 117198; Дополнительные сведения: url: https://fhir.ru/ig/core/StructureDefinition/regionRF; Значение: г. Москва; https://fhir.ru/ig/core/StructureDefinition/fias; Дополнительные сведения: url: aoguid; valueIdentifier: 1dec06af-f015-425b-be4b-253fab5d7ccb [urn:hl7-ru:fias:aoguid]; url: houseguid; valueIdentifier: b1adc7d0-8160-47d0-9903-d794b72078f6 [urn:hl7-ru:fias:houseguid]</td></tr></tbody></table></div>"
+  }
+}

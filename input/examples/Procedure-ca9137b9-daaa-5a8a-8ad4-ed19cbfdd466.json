@@ -1,0 +1,36 @@
+{
+  "resourceType": "Procedure",
+  "id": "ca9137b9-daaa-5a8a-8ad4-ed19cbfdd466",
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/core/StructureDefinition/core-procedure"
+    ]
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "urn:uuid:4d98843f-a824-531d-8d80-f50999ffabc4"
+  },
+  "encounter": {
+    "reference": "urn:uuid:ee657bbf-cede-5ee1-98ef-e0e771eabba6"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-medical-services",
+        "code": "B01.015.002",
+        "display": "Прием (осмотр, консультация) врача-кардиолога повторный"
+      },
+      {
+        "system": "urn:oid:1.2.643.5.1.13.13.11.1070",
+        "code": "B01.015.002",
+        "display": "Прием (осмотр, консультация) врача-кардиолога повторный",
+        "version": "2.10"
+      }
+    ]
+  },
+  "occurrenceDateTime": "2025-05-02T15:45:00+03:00",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Медицинская услуга</h2><table><tbody><tr><td>Статус</td><td>выполнено</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Прием (осмотр, консультация) врача-кардиолога повторный</td></tr><tr><td>Дата / время выполнения</td><td>2025-05-02T15:45:00+03:00</td></tr></tbody></table></div>"
+  }
+}
