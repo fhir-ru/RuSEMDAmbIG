@@ -8,8 +8,8 @@
     "status": "draft",
     "package-id": "ru.semd.amb",
     "ig-ver": "0.2.0",
-    "date": "Tue, 27 Oct, 2026 14:04:00 +0300",
-    "dateISO8601": "2026-10-27T14:04:00+03:00",
+    "date": "Tue, 27 Oct, 2026 14:35:49 +0300",
+    "dateISO8601": "2026-10-27T14:35:49+03:00",
     "errs": 0,
     "warnings": 1047,
     "hints": 358,
@@ -18,7 +18,7 @@
     "suppressed-warnings": 0,
     "version": "5.0.0",
     "tool": "6.0.0-snapshot1 (3)",
-    "maxMemory": 2997574784
+    "maxMemory": 2437978240
   },
   "counts_reconciled": {
     "information": 358,
@@ -30,9 +30,9 @@
     "html_and_publication": 5
   },
   "source_sha256": {
-    "output/qa.xml": "b0d8250343a6939697374f98a497be87984465ec7ee766e13fc75d34376d5c3f",
-    "output/qa.json": "e4192bb7e625963443750867c7f4a5c083cbf80e10e4de8cee457eb314f9d1d9",
-    "output/qa.txt": "c39d9dab2bef7c1f73465d2d625856e7a578f19f147e0951086b8484134fb9cb"
+    "output/qa.xml": "33d1eb8d8914b755f12dbaa5463d8eb8b3ae4ffdc9ed155726a967f09d03bdef",
+    "output/qa.json": "38973726e408f0c0ecdc1a8e86c394013970a781147575fc342a6602707cfe04",
+    "output/qa.txt": "deb9e8ddcf161eb5dd57929d6ede0f8ee1cb163039c2cdba3f71027eccb45559"
   },
   "notes": [
     "qa.xml omits build issues; qa.txt n/a block supplies those without duplicating resource issues.",
@@ -223,7 +223,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "44307",
+            "operationoutcome-issue-col": "44315",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_DEPRECATED",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -251,7 +251,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "59391",
+            "operationoutcome-issue-col": "59399",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_DEPRECATED",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -839,7 +839,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "73361",
+            "operationoutcome-issue-col": "73369",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_DEPRECATED",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -867,7 +867,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "114791",
+            "operationoutcome-issue-col": "114799",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_DEPRECATED",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -881,7 +881,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "37534",
+            "operationoutcome-issue-col": "37542",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_DEPRECATED",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -895,7 +895,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "38273",
+            "operationoutcome-issue-col": "38281",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "MSG_DEPRECATED",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -1793,7 +1793,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "91486",
+            "operationoutcome-issue-col": "91501",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "DEPRECATED_CONCEPT_FOUND",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -1807,7 +1807,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "73862",
+            "operationoutcome-issue-col": "73877",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "DEPRECATED_CONCEPT_FOUND",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -1821,7 +1821,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "129301",
+            "operationoutcome-issue-col": "129316",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "DEPRECATED_CONCEPT_FOUND",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -1835,7 +1835,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "159847",
+            "operationoutcome-issue-col": "159862",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "DEPRECATED_CONCEPT_FOUND",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -1849,7 +1849,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "211620",
+            "operationoutcome-issue-col": "211635",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "DEPRECATED_CONCEPT_FOUND",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -1863,7 +1863,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "52863",
+            "operationoutcome-issue-col": "52878",
             "operationoutcome-issue-source": "TerminologyEngine",
             "operationoutcome-message-id": "DEPRECATED_CONCEPT_FOUND",
             "operationoutcome-issue-context": "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
@@ -1933,7 +1933,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "91502",
+            "operationoutcome-issue-col": "91517",
             "operationoutcome-issue-source": "InstanceValidator"
           },
           "source": "output/qa.xml"
@@ -1945,7 +1945,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "73877",
+            "operationoutcome-issue-col": "73892",
             "operationoutcome-issue-source": "InstanceValidator"
           },
           "source": "output/qa.xml"
@@ -1957,7 +1957,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "129316",
+            "operationoutcome-issue-col": "129331",
             "operationoutcome-issue-source": "InstanceValidator"
           },
           "source": "output/qa.xml"
@@ -1969,7 +1969,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "159863",
+            "operationoutcome-issue-col": "159878",
             "operationoutcome-issue-source": "InstanceValidator"
           },
           "source": "output/qa.xml"
@@ -1981,7 +1981,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "211636",
+            "operationoutcome-issue-col": "211651",
             "operationoutcome-issue-source": "InstanceValidator"
           },
           "source": "output/qa.xml"
@@ -1993,7 +1993,7 @@
           ],
           "extensions": {
             "operationoutcome-issue-line": "1",
-            "operationoutcome-issue-col": "52878",
+            "operationoutcome-issue-col": "52893",
             "operationoutcome-issue-source": "InstanceValidator"
           },
           "source": "output/qa.xml"

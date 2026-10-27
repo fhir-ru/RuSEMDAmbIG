@@ -5,211 +5,211 @@
   "passed": true,
   "checks": [
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "bundle_positive",
-      "expression": "entry.first().resource.is(Composition)"
+      "expression": "entry.first().resource.is(Composition)",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": false,
       "actual": false,
       "name": "bundle_noncomposition_first_negative",
-      "expression": "entry.first().resource.is(Composition)"
+      "expression": "entry.first().resource.is(Composition)",
+      "passed": true,
+      "expected": false
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "smnn_dose_text_positive",
-      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())"
+      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": false,
       "actual": false,
       "name": "smnn_dose_text_removed_negative",
-      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())"
+      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())",
+      "passed": true,
+      "expected": false
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "non_smnn_no_text_allowed",
-      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())"
+      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "dose_text_rule_alone_does_not_check_unit_legality",
-      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())"
+      "expression": "medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists() implies dosage.all(doseAndRate.dose.ofType(Quantity).where(value.exists() and unit.empty() and system.empty() and code.empty()).exists() implies text.exists())",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "therapy_period_pair_positive",
-      "expression": "effective.ofType(Period).all((start.exists() and end.exists()) or extension.where(url = 'http://hl7.org/fhir/StructureDefinition/data-absent-reason' or url = 'http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor').exists())"
+      "expression": "effective.ofType(Period).all((start.exists() and end.exists()) or extension.where(url = 'http://hl7.org/fhir/StructureDefinition/data-absent-reason' or url = 'http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor').exists())",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": false,
       "actual": false,
       "name": "therapy_missing_period_end_negative",
-      "expression": "effective.ofType(Period).all((start.exists() and end.exists()) or extension.where(url = 'http://hl7.org/fhir/StructureDefinition/data-absent-reason' or url = 'http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor').exists())"
+      "expression": "effective.ofType(Period).all((start.exists() and end.exists()) or extension.where(url = 'http://hl7.org/fhir/StructureDefinition/data-absent-reason' or url = 'http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor').exists())",
+      "passed": true,
+      "expected": false
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "therapy_period_without_duration_positive",
-      "expression": "effective.exists() xor extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-therapy-duration').exists()"
+      "expression": "effective.exists() xor extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-therapy-duration').exists()",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "therapy_duration_without_start_date_positive",
-      "expression": "effective.exists() xor extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-therapy-duration').exists()"
+      "expression": "effective.exists() xor extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-therapy-duration').exists()",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": false,
       "actual": false,
       "name": "therapy_period_and_duration_negative",
-      "expression": "effective.exists() xor extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-therapy-duration').exists()"
+      "expression": "effective.exists() xor extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-therapy-duration').exists()",
+      "passed": true,
+      "expected": false
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "smnn_unit_absent_positive",
-      "expression": "iif(medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists(), dosage.doseAndRate.dose.ofType(Quantity).all(unit.empty() and system.empty() and code.empty()), dosage.doseAndRate.dose.ofType(Quantity).all(unit.exists()))"
+      "expression": "iif(medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists(), dosage.doseAndRate.dose.ofType(Quantity).all(unit.empty() and system.empty() and code.empty()), dosage.doseAndRate.dose.ofType(Quantity).all(unit.exists()))",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": false,
       "actual": false,
       "name": "smnn_unit_present_negative",
-      "expression": "iif(medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists(), dosage.doseAndRate.dose.ofType(Quantity).all(unit.empty() and system.empty() and code.empty()), dosage.doseAndRate.dose.ofType(Quantity).all(unit.exists()))"
+      "expression": "iif(medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists(), dosage.doseAndRate.dose.ofType(Quantity).all(unit.empty() and system.empty() and code.empty()), dosage.doseAndRate.dose.ofType(Quantity).all(unit.exists()))",
+      "passed": true,
+      "expected": false
     },
     {
-      "passed": true,
-      "expected": false,
       "actual": false,
       "name": "non_smnn_missing_unit_negative",
-      "expression": "iif(medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists(), dosage.doseAndRate.dose.ofType(Quantity).all(unit.empty() and system.empty() and code.empty()), dosage.doseAndRate.dose.ofType(Quantity).all(unit.exists()))"
+      "expression": "iif(medication.concept.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.611').exists(), dosage.doseAndRate.dose.ofType(Quantity).all(unit.empty() and system.empty() and code.empty()), dosage.doseAndRate.dose.ofType(Quantity).all(unit.exists()))",
+      "passed": true,
+      "expected": false
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "mandatory_visit_value_positive",
-      "expression": "value.exists()"
+      "expression": "value.exists()",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": false,
       "actual": false,
       "name": "mandatory_visit_value_removed_negative",
-      "expression": "value.exists()"
+      "expression": "value.exists()",
+      "passed": true,
+      "expected": false
     },
     {
-      "passed": true,
-      "expected": false,
       "actual": false,
       "name": "R_value_cannot_be_replaced_by_absence",
-      "expression": "value.exists()"
+      "expression": "value.exists()",
+      "passed": true,
+      "expected": false
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "non_R_value_can_have_absence",
-      "expression": "value.exists() or dataAbsentReason.exists()"
+      "expression": "value.exists() or dataAbsentReason.exists()",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": false,
       "actual": false,
       "name": "OTH_without_text_negative",
-      "expression": "code.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor' and value = 'OTH').exists() implies code.text.exists()"
+      "expression": "code.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor' and value = 'OTH').exists() implies code.text.exists()",
+      "passed": true,
+      "expected": false
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "OTH_with_text_positive",
-      "expression": "code.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor' and value = 'OTH').exists() implies code.text.exists()"
+      "expression": "code.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor' and value = 'OTH').exists() implies code.text.exists()",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": false,
       "actual": false,
       "name": "empty_score_negative",
-      "expression": "value.exists() or hasMember.exists() or derivedFrom.exists()"
+      "expression": "value.exists() or hasMember.exists() or derivedFrom.exists()",
+      "passed": true,
+      "expected": false
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "score_result_positive",
-      "expression": "value.exists() or hasMember.exists() or derivedFrom.exists()"
+      "expression": "value.exists() or hasMember.exists() or derivedFrom.exists()",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "document_context_positive",
-      "expression": "section.section.where(extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role').value = 'recipient').entry.exists() and section.section.where(extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role').value = 'document-event').entry.exists()"
+      "expression": "section.section.where(extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role').value = 'recipient').entry.exists() and section.section.where(extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role').value = 'document-event').entry.exists()",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": false,
       "actual": false,
       "name": "document_recipient_role_removed_negative",
-      "expression": "section.section.where(extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role').value = 'recipient').entry.exists() and section.section.where(extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role').value = 'document-event').entry.exists()"
+      "expression": "section.section.where(extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role').value = 'recipient').entry.exists() and section.section.where(extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role').value = 'document-event').entry.exists()",
+      "passed": true,
+      "expected": false
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "document_references_resolved_positive",
-      "expression": "(entry.resource.ofType(Composition).section | entry.resource.ofType(Composition).section.repeat(section)).entry.all(resolve().exists()) and entry.resource.ofType(Observation).hasMember.all(resolve().exists())"
+      "expression": "(entry.resource.ofType(Composition).section | entry.resource.ofType(Composition).section.repeat(section)).entry.all(resolve().exists()) and entry.resource.ofType(Observation).hasMember.all(resolve().exists())",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": false,
       "actual": false,
       "name": "document_unresolved_clinical_reference_negative",
-      "expression": "(entry.resource.ofType(Composition).section | entry.resource.ofType(Composition).section.repeat(section)).entry.all(resolve().exists()) and entry.resource.ofType(Observation).hasMember.all(resolve().exists())"
+      "expression": "(entry.resource.ofType(Composition).section | entry.resource.ofType(Composition).section.repeat(section)).entry.all(resolve().exists()) and entry.resource.ofType(Observation).hasMember.all(resolve().exists())",
+      "passed": true,
+      "expected": false
     },
     {
+      "negative": false,
       "name": "docinfo_required_visit_resolved_positive_negative",
       "positive": true,
-      "passed": true,
-      "negative": false
+      "passed": true
     },
     {
-      "passed": true,
-      "expected": true,
       "actual": true,
       "name": "required_disability_detail_positive",
-      "expression": "hasMember.all(resolve().exists()) implies (hasMember.resolve().ofType(Observation).where(code.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.166' and code = '4083').exists()).count() >= 1 and hasMember.resolve().ofType(Observation).where(code.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.166' and code = '4083').exists()).count() <= 1)"
+      "expression": "hasMember.all(resolve().exists()) implies (hasMember.resolve().ofType(Observation).where(code.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.166' and code = '4083').exists()).count() >= 1 and hasMember.resolve().ofType(Observation).where(code.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.166' and code = '4083').exists()).count() <= 1)",
+      "passed": true,
+      "expected": true
     },
     {
-      "passed": true,
-      "expected": false,
       "actual": false,
       "name": "required_disability_detail_removed_negative",
-      "expression": "hasMember.all(resolve().exists()) implies (hasMember.resolve().ofType(Observation).where(code.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.166' and code = '4083').exists()).count() >= 1 and hasMember.resolve().ofType(Observation).where(code.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.166' and code = '4083').exists()).count() <= 1)"
+      "expression": "hasMember.all(resolve().exists()) implies (hasMember.resolve().ofType(Observation).where(code.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.166' and code = '4083').exists()).count() >= 1 and hasMember.resolve().ofType(Observation).where(code.coding.where(system = 'urn:oid:1.2.643.5.1.13.13.99.2.166' and code = '4083').exists()).count() <= 1)",
+      "passed": true,
+      "expected": false
     },
     {
+      "name": "all_present_section_cardinalities",
       "passed": true,
-      "sections": 19,
-      "name": "all_present_section_cardinalities"
+      "sections": 19
     }
   ]
 }

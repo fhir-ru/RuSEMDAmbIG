@@ -76,6 +76,7 @@ Parent: https://fhir.ru/ig/core/StructureDefinition/core-patient|0.26.0
 Id: semd-amb-patient
 Title: "Пациент амбулаторной консультации"
 Description: "Пациент, идентификаторы МИС, СНИЛС, удостоверяющие документы, полис, адреса, контакты и представительство (У1-12). Расширения RuCore сохраняют тип адреса, регион и ФИАС."
+* ^baseDefinition = "https://fhir.ru/ig/core/StructureDefinition/core-patient|0.26.0"
 * insert AmbSupport
 * identifier 1..* MS
 * identifier.extension contains AmbIdentifierSeries named series 0..1 MS
@@ -112,6 +113,7 @@ Parent: https://fhir.ru/ig/core/StructureDefinition/core-organization|0.26.0
 Id: semd-amb-organization
 Title: "Организация в амбулаторном документе"
 Description: "Организации и подразделения: идентификаторы ФРМО, лицензия, ОГРН/ОГРНИП, ОКПО, ОКАТО, наименование, адреса и контакты; У1-12–У1-21. Обязательность реквизитов зависит от роли организации."
+* ^baseDefinition = "https://fhir.ru/ig/core/StructureDefinition/core-organization|0.26.0"
 * insert AmbSupport
 * identifier MS
 * identifier.extension contains AmbIdentifierSeries named series 0..1 MS
@@ -132,6 +134,7 @@ Parent: https://fhir.ru/ig/core/StructureDefinition/core-practitioner|0.26.0
 Id: semd-amb-practitioner
 Title: "Медицинский работник в амбулаторном документе"
 Description: "ФИО, СНИЛС, адреса и контакты работника. Идентификатор роли в МИС передаётся отдельно в PractitionerRole."
+* ^baseDefinition = "https://fhir.ru/ig/core/StructureDefinition/core-practitioner|0.26.0"
 * insert AmbSupport
 * identifier MS
 * identifier.system MS
@@ -148,6 +151,7 @@ Parent: https://fhir.ru/ig/core/StructureDefinition/core-practitionerrole|0.26.0
 Id: semd-amb-practitioner-role
 Title: "Роль медицинского работника в амбулаторном документе"
 Description: "Идентификатор персонала в МИС, должность, лицо, организация и рабочие контакты. Обязательность зависит от роли автора, заверителя, направившего лица или участника события."
+* ^baseDefinition = "https://fhir.ru/ig/core/StructureDefinition/core-practitionerrole|0.26.0"
 * insert AmbSupport
 * identifier MS
 * identifier.system MS
@@ -169,6 +173,7 @@ Parent: https://fhir.ru/ig/core/StructureDefinition/core-encounter|0.26.0
 Id: semd-amb-encounter
 Title: "Случай оказания помощи в консультации"
 Description: "У1-21: случай, период, вид, форма и условия помощи, медицинская карта и диагнозы."
+* ^baseDefinition = "https://fhir.ru/ig/core/StructureDefinition/core-encounter|0.26.0"
 * insert AmbSupport
 * identifier 1..* MS
 * identifier.system MS
@@ -195,6 +200,7 @@ Parent: https://fhir.ru/ig/core/StructureDefinition/core-coverage|0.26.0
 Id: semd-amb-coverage
 Title: "Источник оплаты и страховое обеспечение"
 Description: "У1-17: вид оплаты, реквизиты полиса/договора, период, страховая организация и застрахованный."
+* ^baseDefinition = "https://fhir.ru/ig/core/StructureDefinition/core-coverage|0.26.0"
 * insert AmbSupport
 * beneficiary MS
 * beneficiary only Reference(AmbPatient)
