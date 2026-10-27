@@ -17,7 +17,7 @@
   ],
   "meta": {
     "profile": [
-      "https://fhir.ru/ig/core/StructureDefinition/core-practitionerrole"
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-author-role"
     ]
   },
   "code": [

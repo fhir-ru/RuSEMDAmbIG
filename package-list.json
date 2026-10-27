@@ -6,7 +6,7 @@
   "list": [
     {
       "version": "current",
-      "desc": "Continuous integration build of the draft IG.",
+      "desc": "Continuous integration build of draft 0.2.0: receiver MustSupport and edition-7 content profiles.",
       "path": "https://build.fhir.org/ig/fhir-ru/RuSEMDAmbIG",
       "status": "ci-build",
       "current": true

@@ -24,5 +24,10 @@
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Препарат</h2><table><tbody><tr><td>Код / содержание</td><td>Бендазол, таблетки, 20 мг|шт. (таблетка)</td></tr><tr><td>Лекарственная форма</td><td>Таблетки, покрытые оболочкой</td></tr></tbody></table></div>"
+  },
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-medication"
+    ]
   }
 }

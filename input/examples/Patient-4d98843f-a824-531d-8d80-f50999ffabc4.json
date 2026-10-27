@@ -3,7 +3,7 @@
   "id": "4d98843f-a824-531d-8d80-f50999ffabc4",
   "meta": {
     "profile": [
-      "https://fhir.ru/ig/core/StructureDefinition/core-patient"
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-patient"
     ]
   },
   "identifier": [

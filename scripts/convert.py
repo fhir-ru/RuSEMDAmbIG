@@ -512,9 +512,17 @@ class Conversion:
                 if relation.get('inversionInd', 'false') not in ('false', '0'):
                     raise ValueError('Inverted result-document link requires a separate mapping rule')
                 self.pending_document_links.append((r, relation, local))
-        performers = many(el, 'cda:performer/cda:assignedEntity')
+        performers = many(el, 'cda:performer')
         if performers:
-            r['performer'] = [self.ref(self.actor(x)) for x in performers]
+            r['performer'] = []
+            for participant in performers:
+                ref = self.ref(self.actor(one(participant, 'cda:assignedEntity')))
+                mode = one(participant, 'cda:modeCode')
+                if mode is not None:
+                    path = dest + '/performer/' + str(len(r['performer'])) + '/extension/0/valueCodeableConcept'
+                    ref['extension'] = [{'url': 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-participant-role',
+                                         'valueCodeableConcept': self.code(mode, path)}]
+                r['performer'].append(ref)
         docs = many(el, 'cda:reference/cda:externalDocument')
         if docs:
             r.setdefault('derivedFrom', []).extend(self.ref(self.document_reference(x)) for x in docs)

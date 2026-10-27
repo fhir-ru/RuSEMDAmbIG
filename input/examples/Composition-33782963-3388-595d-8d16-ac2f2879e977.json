@@ -604,6 +604,24 @@
       ],
       "section": [
         {
+          "title": "Документируемое событие",
+          "extension": [
+            {
+              "url": "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role",
+              "valueCode": "document-event"
+            }
+          ],
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Документируемое событие консультации</p></div>"
+          },
+          "entry": [
+            {
+              "reference": "urn:uuid:5feb48b3-cdf1-5c46-a2d4-16f1f02ce67e"
+            }
+          ]
+        },
+        {
           "title": "Получатель документа",
           "entry": [
             {
@@ -613,7 +631,13 @@
           "text": {
             "status": "generated",
             "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Получатель документа</p></div>"
-          }
+          },
+          "extension": [
+            {
+              "url": "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role",
+              "valueCode": "recipient"
+            }
+          ]
         },
         {
           "title": "Источник оплаты консультации",
@@ -625,7 +649,13 @@
           "text": {
             "status": "generated",
             "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Источник оплаты консультации</p></div>"
-          }
+          },
+          "extension": [
+            {
+              "url": "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role",
+              "valueCode": "payment"
+            }
+          ]
         },
         {
           "title": "Направившее лицо",
@@ -637,7 +667,13 @@
           "text": {
             "status": "generated",
             "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Направившее лицо</p></div>"
-          }
+          },
+          "extension": [
+            {
+              "url": "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role",
+              "valueCode": "referrer"
+            }
+          ]
         },
         {
           "title": "Документ направления",
@@ -649,7 +685,13 @@
           "text": {
             "status": "generated",
             "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Документ направления</p></div>"
-          }
+          },
+          "extension": [
+            {
+              "url": "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role",
+              "valueCode": "referral"
+            }
+          ]
         }
       ]
     }

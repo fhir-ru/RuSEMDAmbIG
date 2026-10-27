@@ -32,5 +32,10 @@
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Параметры клинической шкалы и опросников</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:30:00+03:00</td></tr><tr><td>Значение</td><td>120</td></tr></tbody></table></div>"
+  },
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-8020"
+    ]
   }
 }

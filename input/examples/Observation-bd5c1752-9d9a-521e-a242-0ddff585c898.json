@@ -36,5 +36,10 @@
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Характер заболевания</td></tr><tr><td>Значение</td><td>Впервые в жизни установленное хроническое</td></tr><tr><td>Относится к</td><td>Диагноз: H35.0 Гипертоническая ретинопатия; Фоновая ретинопатия и ретинальные сосудистые изменения</td></tr></tbody></table></div>"
+  },
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-12014"
+    ]
   }
 }

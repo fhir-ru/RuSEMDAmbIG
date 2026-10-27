@@ -3,7 +3,7 @@
   "id": "4d9d60f4-09c7-57e9-8433-06ca02deeff9",
   "meta": {
     "profile": [
-      "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-organization"
     ]
   },
   "name": "ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ \"ГОРОДСКАЯ ПОЛИКЛИНИКА № 64 ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ\"",

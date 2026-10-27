@@ -3,7 +3,7 @@
   "id": "2463646b-3dc4-56d6-9cca-f9848d144ee4",
   "meta": {
     "profile": [
-      "https://fhir.ru/ig/core/StructureDefinition/core-practitionerrole"
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-practitioner-role"
     ]
   },
   "text": {

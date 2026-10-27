@@ -3,7 +3,7 @@
   "id": "ee657bbf-cede-5ee1-98ef-e0e771eabba6",
   "meta": {
     "profile": [
-      "https://fhir.ru/ig/core/StructureDefinition/core-encounter"
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-encounter"
     ]
   },
   "status": "unknown",

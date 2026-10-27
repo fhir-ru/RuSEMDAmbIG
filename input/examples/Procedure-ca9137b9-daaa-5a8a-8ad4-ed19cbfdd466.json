@@ -3,7 +3,7 @@
   "id": "ca9137b9-daaa-5a8a-8ad4-ed19cbfdd466",
   "meta": {
     "profile": [
-      "https://fhir.ru/ig/core/StructureDefinition/core-procedure"
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-procedure"
     ]
   },
   "status": "completed",

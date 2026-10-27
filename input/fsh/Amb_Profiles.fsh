@@ -11,6 +11,7 @@ Id: semd-amb-bundle
 Title: "Документ амбулаторной консультации"
 Description: "Документ FHIR, передающий клиническое содержание протокола консультации СЭМД 290 редакции 7. Профиль задаёт оболочку документа; проверенное покрытие маппинга ограничено опубликованным примером."
 * ^status = #draft
+* ^purpose = "MustSupport (S) относится к получателю; обязательность наличия для отправителя задаётся кратностями и условными ограничениями. См. support.html."
 * ^baseDefinition = "https://fhir.ru/ig/core/StructureDefinition/core-bundle|0.26.0"
 * type = #document
 * identifier 1..1
@@ -26,19 +27,30 @@ Description: "Документ FHIR, передающий клиническое
 * entry contains consultation 1..1
 * entry[consultation].resource only AmbComposition
 * entry[consultation] ^short = "Composition протокола консультации; первая запись документа"
-* obeys amb-composition-first
+* insert AmbDocumentSupport
+* obeys amb-composition-first and amb-document-references
 
 Invariant: amb-composition-first
 Description: "Первая запись документа содержит Composition протокола консультации."
 Severity: #error
 Expression: "entry.first().resource.is(Composition)"
 
+RuleSet: AmbDocumentSupport
+* identifier MS
+* identifier.system MS
+* identifier.value MS
+* timestamp MS
+* entry MS
+* entry.fullUrl MS
+* entry.resource MS
+
 Profile: AmbComposition
 Parent: $CoreComposition
 Id: semd-amb-composition
 Title: "Содержание протокола амбулаторной консультации"
-Description: "Структура документа консультации СЭМД 290: пациент, посещение, автор и разделы с исходным клиническим содержанием. Перечень и число разделов не фиксируются по единственному примеру."
+Description: "Структура документа консультации СЭМД 290: пациент, посещение, автор и разделы с исходным клиническим содержанием. Разделы и их обязательность определены таблицей 6 руководства редакции 7; правила поддержки получателем приведены на support.html."
 * ^status = #draft
+* ^purpose = "MustSupport (S) относится к получателю; обязательность наличия для отправителя задаётся кратностями и условными ограничениями. См. support.html."
 * ^baseDefinition = "https://fhir.ru/ig/core/StructureDefinition/core-composition|0.26.0"
 * type.coding ^slicing.discriminator.type = #value
 * type.coding ^slicing.discriminator.path = "system"
@@ -50,10 +62,33 @@ Description: "Структура документа консультации С�
 * subject 1..1
 // Published RuCore snapshots use versioned base target canonicals. Setting the
 // target directly avoids SUSHI 3.15's reference-narrowing resolution issue.
-* subject ^type[0].targetProfile[0] = $CorePatient
+* subject ^type[0].targetProfile[0] = Canonical(AmbPatient)
 * encounter 1..1
-* encounter ^type[0].targetProfile[0] = $CoreEncounter
-* section 1..*
+* encounter ^type[0].targetProfile[0] = Canonical(AmbEncounter)
+* insert AmbSupport
+* identifier 1..* MS
+* identifier[misDocumentSet] 1..1 MS
+* version 1..1 MS
+* language 1..1 MS
+* meta.security 1..* MS
+* type MS
+* date MS
+* title MS
+* subject MS
+* encounter MS
+* author 1..1 MS
+* author ^type[0].targetProfile[0] = Canonical(AmbAuthorRole)
+* custodian 1..1 MS
+* attester MS
+* attester.mode MS
+* attester.party MS
+* event MS
+* event.detail MS
+* relatesTo MS
+* section 2..* MS
+* insert AmbSections
+* section.extension contains AmbContextRole named contextRole 0..1 MS
+* obeys amb-document-context
 * section.code 0..1
 * section.code ^comment = "Исходные коды разделов СЭМД сохраняются. Дополнительный служебный раздел контекста документа может не иметь кода; код отсутствующему в источнике разделу не присваивается."
 * section.code.coding ^slicing.discriminator.type = #value
@@ -71,11 +106,13 @@ Id: semd-amb-medication-statement
 Title: "Сведения о лекарственной терапии в консультации"
 Description: "Сведения о терапии, сообщённые в протоколе консультации. Не являются автоматически рецептом или подтверждением состоявшегося введения. Для числовой дозы без единицы у узла СМНН требуется текстовое пояснение её смысла."
 * ^status = #draft
-* subject only Reference($CorePatient)
+* ^purpose = "MustSupport (S) относится к получателю; обязательность наличия для отправителя задаётся кратностями и условными ограничениями. См. support.html."
+* subject only Reference(AmbPatient)
 * medication.concept 1..1
-* medication.concept.coding 1..*
+* medication.concept.coding 0..*
 * dosage.text ^comment = "Для узла СМНН (НСИ 1.2.643.5.1.13.13.99.2.611) числовая доза без единицы означает количество потребительских единиц выбранного препарата. Текст поясняет это соглашение; unit/system/code не выводятся из display и пересчёт в массу не производится. При явно заданной единице это правило автоматически не применяется."
-* obeys amb-smnn-dose-text
+* insert AmbMedicationStatementSupport
+* obeys amb-smnn-dose-text and amb-smnn-dose-unit and amb-period-pair and amb-unknown-medication-reference
 
 Invariant: amb-smnn-dose-text
 Description: "Если препарат задан узлом СМНН и доза представлена числом без единицы, Dosage.text поясняет потребительскую единицу препарата."
@@ -88,8 +125,59 @@ Id: semd-amb-medication-administration
 Title: "Сообщённое применение невакцинного препарата"
 Description: "Факт применения невакцинного препарата, в том числе диагностического аллергена, сообщённый в консультации. Вид ресурса выбирается по подтверждённому виду препарата, а не названию раздела IMM. Вакцинации представляются Immunization."
 * ^status = #draft
-* subject only Reference($CorePatient)
+* ^purpose = "MustSupport (S) относится к получателю; обязательность наличия для отправителя задаётся кратностями и условными ограничениями. См. support.html."
+* subject only Reference(AmbPatient)
 * medication.concept 1..1
-* medication.concept.coding 1..*
+* medication.concept.coding 0..*
 * encounter ^comment = "Ссылка на посещение допустима только при наличии такой связи в исходных сведениях. Включение записи в документ через Composition.section.entry не устанавливает связь с Encounter консультации. В комплектном примере Диаскинтест с консультацией не связывается."
+* insert AmbMedicationAdministrationSupport
 * occurence[x] ^comment = "Сохраняется точность исходной даты или времени применения. Неизвестные время суток, доза, путь введения, исполнитель и результат пробы не добавляются."
+
+RuleSet: AmbMedicationStatementSupport
+* insert AmbSupport
+* subject MS
+* encounter MS
+* medication MS
+* medication.concept MS
+* medication.concept.coding MS
+* medication.reference MS
+* medication only CodeableReference(AmbMedication)
+* effective[x] MS
+* extension contains AmbTherapyDuration named duration 0..1 MS
+* obeys amb-therapy-period-or-duration
+* effectivePeriod.start MS
+* effectivePeriod.end MS
+* note MS
+* derivedFrom MS
+* relatedClinicalInformation MS
+* dosage 1..* MS
+* dosage.text MS
+* dosage.timing 1..1 MS
+* dosage.timing.repeat MS
+* dosage.timing.repeat.frequency MS
+* dosage.timing.repeat.period MS
+* dosage.timing.repeat.periodUnit MS
+* dosage.timing.repeat.extension MS
+* dosage.timing.repeat.extension contains AmbSourceUnit named sourceUnit 0..1 MS
+* dosage.route 1..1 MS
+* dosage.doseAndRate 1..* MS
+* dosage.doseAndRate.dose[x] 1..1 MS
+* dosage.doseAndRate.dose[x] only SimpleQuantity
+* dosage.doseAndRate.doseQuantity.extension contains AmbSourceUnit named sourceUnit 0..1 MS
+* dosage.patientInstruction MS
+
+RuleSet: AmbMedicationAdministrationSupport
+* insert AmbSupport
+* subject MS
+* medication MS
+* medication.concept MS
+* medication.concept.coding MS
+* encounter MS
+* occurence[x] MS
+* note MS
+* supportingInformation MS
+
+Invariant: amb-therapy-period-or-duration
+Description: "У3-34.1.4: период (или явная причина его отсутствия) либо длительность, но не оба представления одновременно."
+Severity: #error
+Expression: "effective.exists() xor extension.where(url = 'https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-therapy-duration').exists()"

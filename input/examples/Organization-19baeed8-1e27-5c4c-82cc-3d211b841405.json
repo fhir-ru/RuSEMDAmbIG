@@ -3,7 +3,7 @@
   "id": "19baeed8-1e27-5c4c-82cc-3d211b841405",
   "meta": {
     "profile": [
-      "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-organization"
     ]
   },
   "name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СТРАХОВАЯ КОМПАНИЯ \"ИНГОССТРАХ-М\"",

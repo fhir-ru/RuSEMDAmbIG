@@ -3,7 +3,7 @@
   "id": "934f942f-129b-5e81-be3e-a927ff0622fb",
   "meta": {
     "profile": [
-      "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-organization"
     ]
   },
   "name": "Министерство здравоохранения Российской Федерации",

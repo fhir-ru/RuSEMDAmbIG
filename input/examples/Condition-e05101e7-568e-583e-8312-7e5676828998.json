@@ -30,5 +30,10 @@
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Диагноз</h2><table><tbody><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Клинический статус</td><td>unknown</td></tr><tr><td>Код / содержание</td><td>I11.9 ГБ II стадии. Неконтролируемая АГ. Нарушенная гликемия натощак. Дислипидемия. ГЛЖ. Риск 3 (высокий); Гипертензивная [гипертоническая] болезнь с преимущественным поражением сердца без (застойной) сердечной недостаточности</td></tr><tr><td>Дата записи</td><td>2025-05-02</td></tr></tbody></table></div>"
+  },
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-condition"
+    ]
   }
 }

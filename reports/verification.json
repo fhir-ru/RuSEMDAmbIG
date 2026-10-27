@@ -21,7 +21,15 @@
       "passed": true,
       "detail": {
         "source_scalars": 1268,
-        "resolved_targets": 943
+        "resolved_targets": 947
+      }
+    },
+    {
+      "name": "observation_participant_roles_preserve_coding",
+      "passed": true,
+      "detail": {
+        "roles_preserved": 1,
+        "position_is_separate": true
       }
     },
     {

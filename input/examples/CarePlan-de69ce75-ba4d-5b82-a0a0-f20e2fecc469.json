@@ -13,5 +13,10 @@
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Рекомендации</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Намерение</td><td>предложение</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Описание</td><td>Бисопролол (таблетки, 5 мг) 1 таблетка per os 1 раз в день в течение 1 недели, Стол №10</td></tr></tbody></table></div>"
+  },
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-care-plan"
+    ]
   }
 }

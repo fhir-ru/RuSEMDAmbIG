@@ -41,5 +41,10 @@
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Связанный документ</h2><table><tbody><tr><td>Статус</td><td>актуальная запись</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Идентификатор</td><td>659481548 [urn:oid:1.2.643.5.1.13.3.25.77.50.100.1.1.51]; 177.77.23.05.314159200 [urn:oid:1.2.643.5.1.13.13.17.1.1]</td></tr><tr><td>Тип</td><td>Направление на госпитализацию, восстановительное лечение, обследование, консультацию</td></tr><tr><td>Содержимое</td><td>Вложение: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown; Название: Ссылка из CDA; содержимое документа не включено в источник</td></tr></tbody></table></div>"
+  },
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-document-reference"
+    ]
   }
 }

@@ -6301,18 +6301,22 @@
     "xpath": "/cda:ClinicalDocument[1]/cda:component[1]/cda:structuredBody[1]/cda:component[10]/cda:section[1]/cda:entry[1]/cda:observation[1]/cda:performer[1]/cda:modeCode[1]/@code",
     "line": 791,
     "value": "DOCTOR",
-    "status": "report-only",
-    "targets": [],
-    "rule": "GAP: no structured rule; source retained",
+    "status": "mapped",
+    "targets": [
+      "Observation/a29e2800-af4e-55ae-906e-6b9e354a1edf#/performer/0/extension/0/valueCodeableConcept/coding/0/code"
+    ],
+    "rule": "copy",
     "id": "amb-map-0599"
   },
   {
     "xpath": "/cda:ClinicalDocument[1]/cda:component[1]/cda:structuredBody[1]/cda:component[10]/cda:section[1]/cda:entry[1]/cda:observation[1]/cda:performer[1]/cda:modeCode[1]/@codeSystem",
     "line": 791,
     "value": "1.2.643.5.1.13.13.99.2.368",
-    "status": "report-only",
-    "targets": [],
-    "rule": "GAP: no structured rule; source retained",
+    "status": "mapped",
+    "targets": [
+      "Observation/a29e2800-af4e-55ae-906e-6b9e354a1edf#/performer/0/extension/0/valueCodeableConcept/coding/0/system"
+    ],
+    "rule": "OID -> canonical RuCore URI or urn:oid",
     "id": "amb-map-0600"
   },
   {
@@ -6328,18 +6332,22 @@
     "xpath": "/cda:ClinicalDocument[1]/cda:component[1]/cda:structuredBody[1]/cda:component[10]/cda:section[1]/cda:entry[1]/cda:observation[1]/cda:performer[1]/cda:modeCode[1]/@displayName",
     "line": 791,
     "value": "Врач",
-    "status": "report-only",
-    "targets": [],
-    "rule": "GAP: no structured rule; source retained",
+    "status": "mapped",
+    "targets": [
+      "Observation/a29e2800-af4e-55ae-906e-6b9e354a1edf#/performer/0/extension/0/valueCodeableConcept/coding/0/display"
+    ],
+    "rule": "copy",
     "id": "amb-map-0602"
   },
   {
     "xpath": "/cda:ClinicalDocument[1]/cda:component[1]/cda:structuredBody[1]/cda:component[10]/cda:section[1]/cda:entry[1]/cda:observation[1]/cda:performer[1]/cda:modeCode[1]/@codeSystemVersion",
     "line": 791,
     "value": "2.8",
-    "status": "report-only",
-    "targets": [],
-    "rule": "GAP: no structured rule; source retained",
+    "status": "mapped",
+    "targets": [
+      "Observation/a29e2800-af4e-55ae-906e-6b9e354a1edf#/performer/0/extension/0/valueCodeableConcept/coding/0/version"
+    ],
+    "rule": "copy",
     "id": "amb-map-0603"
   },
   {

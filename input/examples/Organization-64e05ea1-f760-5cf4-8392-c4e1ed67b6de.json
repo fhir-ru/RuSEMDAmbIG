@@ -3,7 +3,7 @@
   "id": "64e05ea1-f760-5cf4-8392-c4e1ed67b6de",
   "meta": {
     "profile": [
-      "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-organization"
     ]
   },
   "name": "Государственное бюджетное учреждение здравоохранения города Москвы \"Городская поликлиника №164 Департамент здравоохранения города Москвы\"",

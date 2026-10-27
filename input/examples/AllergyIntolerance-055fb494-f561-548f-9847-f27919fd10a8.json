@@ -41,5 +41,10 @@
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Сведения об аллергии</h2><table><tbody><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>text: Апельсин, грейпфрут, лимон, мандарин; Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor; valueCode: OTH</td></tr><tr><td>Реакция</td><td>Проявление: concept: Зуд; Начало реакции: 2011-04-02</td></tr><tr><td>Категория</td><td>food</td></tr></tbody></table></div>"
+  },
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-allergy-intolerance"
+    ]
   }
 }

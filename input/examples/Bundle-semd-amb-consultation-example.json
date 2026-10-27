@@ -629,6 +629,24 @@
             ],
             "section": [
               {
+                "title": "Документируемое событие",
+                "extension": [
+                  {
+                    "url": "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role",
+                    "valueCode": "document-event"
+                  }
+                ],
+                "text": {
+                  "status": "generated",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Документируемое событие консультации</p></div>"
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:5feb48b3-cdf1-5c46-a2d4-16f1f02ce67e"
+                  }
+                ]
+              },
+              {
                 "title": "Получатель документа",
                 "entry": [
                   {
@@ -638,7 +656,13 @@
                 "text": {
                   "status": "generated",
                   "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Получатель документа</p></div>"
-                }
+                },
+                "extension": [
+                  {
+                    "url": "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role",
+                    "valueCode": "recipient"
+                  }
+                ]
               },
               {
                 "title": "Источник оплаты консультации",
@@ -650,7 +674,13 @@
                 "text": {
                   "status": "generated",
                   "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Источник оплаты консультации</p></div>"
-                }
+                },
+                "extension": [
+                  {
+                    "url": "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role",
+                    "valueCode": "payment"
+                  }
+                ]
               },
               {
                 "title": "Направившее лицо",
@@ -662,7 +692,13 @@
                 "text": {
                   "status": "generated",
                   "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Направившее лицо</p></div>"
-                }
+                },
+                "extension": [
+                  {
+                    "url": "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role",
+                    "valueCode": "referrer"
+                  }
+                ]
               },
               {
                 "title": "Документ направления",
@@ -674,7 +710,13 @@
                 "text": {
                   "status": "generated",
                   "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Документ направления</p></div>"
-                }
+                },
+                "extension": [
+                  {
+                    "url": "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-context-role",
+                    "valueCode": "referral"
+                  }
+                ]
               }
             ]
           }
@@ -692,7 +734,7 @@
         "id": "4d98843f-a824-531d-8d80-f50999ffabc4",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-patient"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-patient"
           ]
         },
         "identifier": [
@@ -871,7 +913,7 @@
         "id": "a3234b57-6e3e-5ffb-a3d6-56e39c872688",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-organization"
           ]
         },
         "name": "ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ \"ГОРОДСКАЯ ПОЛИКЛИНИКА № 64 ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ\"",
@@ -1003,7 +1045,7 @@
         ],
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-practitionerrole"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-author-role"
           ]
         },
         "code": [
@@ -1053,7 +1095,7 @@
         "id": "145fad7a-f3e5-562b-808f-e23e082845e1",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-practitioner"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-author-practitioner"
           ]
         },
         "name": [
@@ -1130,7 +1172,7 @@
         "id": "1e12cf95-0196-5d36-863a-956ed52bfa05",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-organization"
           ]
         },
         "name": "ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ \"ГОРОДСКАЯ ПОЛИКЛИНИКА № 64 ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ\"",
@@ -1207,7 +1249,7 @@
         "id": "4d9d60f4-09c7-57e9-8433-06ca02deeff9",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-organization"
           ]
         },
         "name": "ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ \"ГОРОДСКАЯ ПОЛИКЛИНИКА № 64 ДЕПАРТАМЕНТА ЗДРАВООХРАНЕНИЯ ГОРОДА МОСКВЫ\"",
@@ -1284,7 +1326,7 @@
         "id": "2463646b-3dc4-56d6-9cca-f9848d144ee4",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-practitionerrole"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-practitioner-role"
           ]
         },
         "text": {
@@ -1300,7 +1342,7 @@
         "id": "ee657bbf-cede-5ee1-98ef-e0e771eabba6",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-encounter"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-encounter"
           ]
         },
         "status": "unknown",
@@ -1480,6 +1522,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Медицинская услуга</h2><table><tbody><tr><td>Статус</td><td>выполнено</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Консультация</td></tr><tr><td>Период выполнения</td><td>Начало: 2025-05-02T15:30:00+03:00; Окончание: 2025-05-02T15:45:00+03:00</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-procedure"
+          ]
         }
       }
     },
@@ -1490,7 +1537,7 @@
         "id": "934f942f-129b-5e81-be3e-a927ff0622fb",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-organization"
           ]
         },
         "name": "Министерство здравоохранения Российской Федерации",
@@ -1513,7 +1560,7 @@
         "id": "37d4c64a-7f8e-559c-9a74-08a2716976df",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-coverage"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-coverage"
           ]
         },
         "status": "draft",
@@ -1578,7 +1625,7 @@
         "id": "19baeed8-1e27-5c4c-82cc-3d211b841405",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-organization"
           ]
         },
         "name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СТРАХОВАЯ КОМПАНИЯ \"ИНГОССТРАХ-М\"",
@@ -1681,7 +1728,7 @@
         ],
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-practitionerrole"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-practitioner-role"
           ]
         },
         "code": [
@@ -1731,7 +1778,7 @@
         "id": "f495d057-78ff-5521-9730-c226d2e47416",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-practitioner"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-practitioner"
           ]
         },
         "name": [
@@ -1808,7 +1855,7 @@
         "id": "64e05ea1-f760-5cf4-8392-c4e1ed67b6de",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-organization"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-organization"
           ]
         },
         "name": "Государственное бюджетное учреждение здравоохранения города Москвы \"Городская поликлиника №164 Департамент здравоохранения города Москвы\"",
@@ -1923,6 +1970,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Связанный документ</h2><table><tbody><tr><td>Статус</td><td>актуальная запись</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Идентификатор</td><td>659481548 [urn:oid:1.2.643.5.1.13.3.25.77.50.100.1.1.51]; 177.77.23.05.314159200 [urn:oid:1.2.643.5.1.13.13.17.1.1]</td></tr><tr><td>Тип</td><td>Направление на госпитализацию, восстановительное лечение, обследование, консультацию</td></tr><tr><td>Содержимое</td><td>Вложение: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown; Название: Ссылка из CDA; содержимое документа не включено в источник</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-document-reference"
+          ]
         }
       }
     },
@@ -1961,6 +2013,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Обращение</td></tr><tr><td>Значение</td><td>Повторный</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-1"
+          ]
         }
       }
     },
@@ -1999,6 +2056,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Место проведения</td></tr><tr><td>Значение</td><td>Амбулаторно-поликлиническое учреждение</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-2"
+          ]
         }
       }
     },
@@ -2037,6 +2099,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Состояние пациента</td></tr><tr><td>Значение</td><td>Удовлетворительное</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-4"
+          ]
         }
       }
     },
@@ -2066,6 +2133,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Объективные данные</td></tr><tr><td>Значение</td><td>Сознание ясное. Контакт доступен. Кожные покровы и видимые слизистые обычной окраски, достаточной влажности. Кожные высыпания. Питание:повыш. Щитовидная железа пальпаторно не определяется. Периферические лимфоузлы не увеличены. Костно-мышечная система без видимых изменений. Грудная клетка правильной формы. Голосовое дрожание не изменено. Перкуторно над легкими легочный звук. При аускультации в легких дыхание везикулярное, хрипов нет. При осмотре области сердца и крупных кровеносных сосудов б/о. Пальпаторно - верхушечный толчок в пятом межреберье; перкуторно: левая граница относительной тупости сердца по срединно-ключичной линии, правая – по правому краю грудины, верхняя – 3 ребро. При аускультации – тоны сердца достаточной звучности, ритм сердечных сокращений правильный, дефицита пульса нет.</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-5"
+          ]
         }
       }
     },
@@ -2095,6 +2167,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Заключение консультации</td></tr><tr><td>Значение</td><td>Состояние пациента без существенной динамики. Планируется продолжить проводимую терапию. Необходимо произвести доп. обследование – ЭКГ.</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-6"
+          ]
         }
       }
     },
@@ -2133,6 +2210,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Выявленные патологии</td></tr><tr><td>Значение</td><td>Тахикардия</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-7"
+          ]
         }
       }
     },
@@ -2171,6 +2253,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Льготная категория</td></tr><tr><td>Значение</td><td>Инвалиды III группы</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-8"
+          ]
         }
       }
     },
@@ -2200,6 +2287,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Жалобы пациента</td></tr><tr><td>Значение</td><td>Дискомфорт в области сердца, кашель с трудноотделяемой слизистой мокротой, одышка при минимальной физической нагрузке, неустойчивость АД</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-9"
+          ]
         }
       }
     },
@@ -2229,6 +2321,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Текстовое описание</td></tr><tr><td>Значение</td><td>8 лет назад впервые стало возникать периодическое, стойкое повышение АД, в начале незначительное - до 140/90 мм. рт. ст., затем постепенное повышение до 170/100 мм.рт.ст., появилась головная боль, вскоре ставшая постоянной, особенно утром, тяжесть в затылочной области головы, боль усиливалась в положении лежа и проходила после приема анальгетиков (анальгин). За последний год участились случаи боли в области сердца, наблюдалось повышение АД вплоть до 200/120 мм.рт.ст.</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-10"
+          ]
         }
       }
     },
@@ -2258,6 +2355,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Текстовое описание</td></tr><tr><td>Значение</td><td>Родился вторым ребенком в семье. В детстве частые простудные, детские инфекции – краснуха, скарлатина, ветряная оспа. ИБС:стенокардия фк2, постинфарктный кардиосклероз (оим нижней локализации в 2013 г), желудочковая экстрасистолия.. ЧКВ::тламп со стентированием интермедиальной артерии и оа в 2014г, пка и пна в 2013 г . атеросклероз аорты, сонных артерий с дислипидемией 2а тип. Сахарный диабет 2 тип, инсулиннезависимый, послеоперационный гипотиреоз. Состав семьи: жена и сын. Наследственность отягощена: по линии матери – гипертоническая болезнь, по линии отца – ОИМ задней стенки левого желудочка. Сын здоров.</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-11"
+          ]
         }
       }
     },
@@ -2312,6 +2414,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Инвалидность</td></tr><tr><td>Период</td><td>Начало: 2014-10-22; _end: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor; valueCode: PINF</td></tr><tr><td>Значение</td><td>Третья группа</td></tr><tr><td>Связанные наблюдения</td><td>Наблюдение: Порядок установления инвалидности</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-12"
+          ]
         }
       }
     },
@@ -2350,6 +2457,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Порядок установления инвалидности</td></tr><tr><td>Значение</td><td>Повторно</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-815"
+          ]
         }
       }
     },
@@ -2408,6 +2520,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Степень утраты профессиональной трудоспособности (%)</td></tr><tr><td>_effectiveDateTime</td><td>Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: not-applicable</td></tr><tr><td>Значение</td><td>30.0 %</td></tr><tr><td>Связанные наблюдения</td><td>Наблюдение: Срок, на который установлена степень утраты профессиональной трудоспособности</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-13"
+          ]
         }
       }
     },
@@ -2446,6 +2563,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Срок, на который установлена степень утраты профессиональной трудоспособности</td></tr><tr><td>Значение</td><td>6 месяцев</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-4083"
+          ]
         }
       }
     },
@@ -2488,6 +2610,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Причина нетрудоспособности</td></tr><tr><td>Период</td><td>Начало: 2025-05-02; Окончание: 2025-05-10</td></tr><tr><td>Значение</td><td>Заболевание (в том числе профессиональное заболевание и его обострение)</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-14"
+          ]
         }
       }
     },
@@ -2526,6 +2653,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Потенциально-опасный для здоровья социальный фактор</td></tr><tr><td>Значение</td><td>Расстройство режима сна и бодрствования</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-15"
+          ]
         }
       }
     },
@@ -2564,6 +2696,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Вредный производственный фактор</td></tr><tr><td>Значение</td><td>Биологические факторы</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-16"
+          ]
         }
       }
     },
@@ -2602,6 +2739,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Вредная привычка или зависимость</td></tr><tr><td>Значение</td><td>Телевизионная зависимость</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-17"
+          ]
         }
       }
     },
@@ -2645,6 +2787,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Занятость</td></tr><tr><td>note</td><td>text: Заведующий хозяйством в ООО &quot;Организация&quot;</td></tr><tr><td>Значение</td><td>Работающий</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-18"
+          ]
         }
       }
     },
@@ -2693,6 +2840,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Сведения об аллергии</h2><table><tbody><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>text: Апельсин, грейпфрут, лимон, мандарин; Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor; valueCode: OTH</td></tr><tr><td>Реакция</td><td>Проявление: concept: Зуд; Начало реакции: 2011-04-02</td></tr><tr><td>Категория</td><td>food</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-allergy-intolerance"
+          ]
         }
       }
     },
@@ -2722,6 +2874,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Текстовое описание</td></tr><tr><td>Значение</td><td>Контактов с больным(носителем) инфекционным заболеванием за последние 21 день не было. Выезжал за пределы города, области, страны за последний месяц: да</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-23"
+          ]
         }
       }
     },
@@ -2749,7 +2906,22 @@
         "valueString": "Акроцианоз. Отеков нет. Рост 158 см, Вес 53 кг, Психическое состояние: Сознание ясное. Неврологический статус: Менингиальных знаков нет. Органы дыхания: В легких дыхание жесткое, рассеянные свистящие сухие хрипы с обеих сторон. Сатурация 96%. ЧД: 24 движ./мин. Система кровообращения: Тоны сердца приглушены, ритмичны, акцент 2 тона на аорте, легочной артерии. АД: 130/80 мм рт. ст, ЧСС: 110 уд./мин, Пульс: 110 уд./мин. Система пищеварения: Живот при пальпации мягкий, б/болезненный. Мочеполовая система: С-м \"поколачивания\" отрицательный с обеих сторон. Дизурии нет.",
         "performer": [
           {
-            "reference": "urn:uuid:5eb4b0b6-eb81-5105-9796-3c9db2aa0940"
+            "reference": "urn:uuid:5eb4b0b6-eb81-5105-9796-3c9db2aa0940",
+            "extension": [
+              {
+                "url": "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-participant-role",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.643.5.1.13.13.99.2.368",
+                      "code": "DOCTOR",
+                      "display": "Врач",
+                      "version": "2.8"
+                    }
+                  ]
+                }
+              }
+            ]
           }
         ],
         "derivedFrom": [
@@ -2760,6 +2932,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown</td></tr><tr><td>Дата / время</td><td>2025-04-02</td></tr><tr><td>Значение</td><td>Акроцианоз. Отеков нет. Рост 158 см, Вес 53 кг, Психическое состояние: Сознание ясное. Неврологический статус: Менингиальных знаков нет. Органы дыхания: В легких дыхание жесткое, рассеянные свистящие сухие хрипы с обеих сторон. Сатурация 96%. ЧД: 24 движ./мин. Система кровообращения: Тоны сердца приглушены, ритмичны, акцент 2 тона на аорте, легочной артерии. АД: 130/80 мм рт. ст, ЧСС: 110 уд./мин, Пульс: 110 уд./мин. Система пищеварения: Живот при пальпации мягкий, б/болезненный. Мочеполовая система: С-м &quot;поколачивания&quot; отрицательный с обеих сторон. Дизурии нет.</td></tr><tr><td>Исполнитель</td><td>Роль медицинского работника: Врач-кардиолог</td></tr><tr><td>Основано на</td><td>Связанный документ</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-24"
+          ]
         }
       }
     },
@@ -2784,7 +2961,7 @@
         ],
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-practitionerrole"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-practitioner-role"
           ]
         },
         "code": [
@@ -2830,7 +3007,7 @@
         "id": "b708391e-0452-530c-bed2-ba15e43df511",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-practitioner"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-practitioner"
           ]
         },
         "name": [
@@ -2881,6 +3058,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Общий анализ крови (базовый)</td></tr><tr><td>Дата / время</td><td>2025-04-02</td></tr><tr><td>Значение</td><td>Гемоглобин 12,7 (12,0 - 14,0) г/дл; Эритроциты 3,61 (3,90 - 4,70) 10^6/мкл; Ср. содержание гемоглобина в эритроците 35,1 (27,0 - 31,0) пг; Средний объем эритроцита 108,7 (80,0 - 100,0) фл; Ср. концентрация гемоглобина в эритроците 32,3 (30,0 - 38,0) г/дл; Гематокрит 39,2 (36,0 - 42,0) %; Тромбоциты 133 (180 - 320) 10^3/мкл; Средний объем тромбоцита 12,20 (7,40 - 12,00) фл; Лейкоциты 4,97 (4,00 - 9,00) 10^9/л; Нейтрофилы 39,70 (48,00 - 78,00) %; Эозинофилы 1,5 (0,5 - 5,0) %; Моноциты 12,3 (3,0 - 11,0) %; Лимфоциты 43,50 (19,00 - 37,00) %; Базофилы 0,5 (0,0 - 1,0) %; Нейтрофилы абс. 1,97 (2,00 - 7,50) 10^9/л; Эозинофилы абс. 0,07 (0,02 - 0,30) 10^9/л; Моноциты абс. 0,61 (0,09 - 0,60) 10^9/л; Лимфоциты абс. 2,16 (1,20 - 3,00) 10^9/л; Базофилы абс. 0,03 (0,00 - 0,07) 10^9/л; Скорость оседания эритроцитов по Вестергрену 17 (0 - 20) мм/ч.</td></tr><tr><td>Основано на</td><td>Связанный документ</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-27"
+          ]
         }
       }
     },
@@ -2916,6 +3098,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Ультразвуковое исследование сердца трансторакальное</td></tr><tr><td>Дата / время</td><td>2025-04-02</td></tr><tr><td>Значение</td><td>Камеры не расширены. Толщина стенок в норме. Уплотнение створок АК, МК и ТК с регургитацией на МК 1 ст, на ТК 0-1 ст. Сократимость миокарда хорошая. Систолическая функция в норме. Диастолическая функция по 1 типу. Умеренная легочная гипертензия.</td></tr><tr><td>Основано на</td><td>Связанный документ</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-28"
+          ]
         }
       }
     },
@@ -3058,6 +3245,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Препарат</h2><table><tbody><tr><td>Код / содержание</td><td>Бендазол, таблетки, 20 мг|шт. (таблетка)</td></tr><tr><td>Лекарственная форма</td><td>Таблетки, покрытые оболочкой</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-medication"
+          ]
         }
       }
     },
@@ -3104,6 +3296,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Частота пульса</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:35:00+03:00</td></tr><tr><td>Значение</td><td>100.0 1/мин</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-36"
+          ]
         }
       }
     },
@@ -3150,6 +3347,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Артериальное давление систолическое</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:35:00+03:00</td></tr><tr><td>Значение</td><td>130.0 мм.рт.ст.</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-36"
+          ]
         }
       }
     },
@@ -3196,6 +3398,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Артериальное давление диастолическое</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:35:00+03:00</td></tr><tr><td>Значение</td><td>90.0 мм.рт.ст.</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-36"
+          ]
         }
       }
     },
@@ -3240,6 +3447,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Индекс массы тела</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:35:00+03:00</td></tr><tr><td>Значение</td><td>36.0 кг/м^2</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-36"
+          ]
         }
       }
     },
@@ -3286,6 +3498,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Рост</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:35:00+03:00</td></tr><tr><td>Значение</td><td>165.0 см</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-36"
+          ]
         }
       }
     },
@@ -3332,6 +3549,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Масса тела</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:35:00+03:00</td></tr><tr><td>Значение</td><td>98.0 кг</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-36"
+          ]
         }
       }
     },
@@ -3400,6 +3622,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>SCORE</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:30:00+03:00</td></tr><tr><td>Значение</td><td>9.0 Ед</td></tr><tr><td>Связанные наблюдения</td><td>Наблюдение: Интерпретация результатов расчета клинической шкалы или опросника</td></tr><tr><td>Основано на</td><td>Наблюдение: Параметры клинической шкалы и опросников; Наблюдение: Параметры клинической шкалы и опросников; Наблюдение: Параметры клинической шкалы и опросников; Наблюдение: Параметры клинической шкалы и опросников; Наблюдение: Параметры клинической шкалы и опросников</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-entry-37"
+          ]
         }
       }
     },
@@ -3438,6 +3665,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Интерпретация результатов расчета клинической шкалы или опросника</td></tr><tr><td>Значение</td><td>Высокий риск</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-8019"
+          ]
         }
       }
     },
@@ -3477,6 +3709,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Параметры клинической шкалы и опросников</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:30:00+03:00</td></tr><tr><td>Значение</td><td>Мужской</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-8020"
+          ]
         }
       }
     },
@@ -3516,6 +3753,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Параметры клинической шкалы и опросников</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:30:00+03:00</td></tr><tr><td>Значение</td><td>60</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-8020"
+          ]
         }
       }
     },
@@ -3555,6 +3797,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Параметры клинической шкалы и опросников</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:30:00+03:00</td></tr><tr><td>Значение</td><td>6</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-8020"
+          ]
         }
       }
     },
@@ -3594,6 +3841,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Параметры клинической шкалы и опросников</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:30:00+03:00</td></tr><tr><td>Значение</td><td>120</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-8020"
+          ]
         }
       }
     },
@@ -3633,6 +3885,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Параметры клинической шкалы и опросников</td></tr><tr><td>Дата / время</td><td>2025-05-02T15:30:00+03:00</td></tr><tr><td>Значение</td><td>Некурящие</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-8020"
+          ]
         }
       }
     },
@@ -3670,6 +3927,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Диагноз</h2><table><tbody><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Клинический статус</td><td>unknown</td></tr><tr><td>Код / содержание</td><td>I11.9 ГБ II стадии. Неконтролируемая АГ. Нарушенная гликемия натощак. Дислипидемия. ГЛЖ. Риск 3 (высокий); Гипертензивная [гипертоническая] болезнь с преимущественным поражением сердца без (застойной) сердечной недостаточности</td></tr><tr><td>Дата записи</td><td>2025-05-02</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-condition"
+          ]
         }
       }
     },
@@ -3704,6 +3966,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Дополнительные сведения о заболевании</td></tr><tr><td>Значение</td><td>Целевое АД менее 130/менее 80 мм рт.ст.</td></tr><tr><td>Относится к</td><td>Диагноз: I11.9 ГБ II стадии. Неконтролируемая АГ. Нарушенная гликемия натощак. Дислипидемия. ГЛЖ. Риск 3 (высокий); Гипертензивная [гипертоническая] болезнь с преимущественным поражением сердца без (застойной) сердечной недостаточности</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-8045"
+          ]
         }
       }
     },
@@ -3741,6 +4008,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Диагноз</h2><table><tbody><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Клинический статус</td><td>unknown</td></tr><tr><td>Код / содержание</td><td>H35.0 Гипертоническая ретинопатия; Фоновая ретинопатия и ретинальные сосудистые изменения</td></tr><tr><td>Дата записи</td><td>2025-05-02</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-condition"
+          ]
         }
       }
     },
@@ -3784,6 +4056,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Характер заболевания</td></tr><tr><td>Значение</td><td>Впервые в жизни установленное хроническое</td></tr><tr><td>Относится к</td><td>Диагноз: H35.0 Гипертоническая ретинопатия; Фоновая ретинопатия и ретинальные сосудистые изменения</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-12014"
+          ]
         }
       }
     },
@@ -3804,6 +4081,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Рекомендации</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Намерение</td><td>предложение</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Описание</td><td>Бисопролол (таблетки, 5 мг) 1 таблетка per os 1 раз в день в течение 1 недели, Стол №10</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-care-plan"
+          ]
         }
       }
     },
@@ -3814,7 +4096,7 @@
         "id": "ca9137b9-daaa-5a8a-8ad4-ed19cbfdd466",
         "meta": {
           "profile": [
-            "https://fhir.ru/ig/core/StructureDefinition/core-procedure"
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-procedure"
           ]
         },
         "status": "completed",
@@ -3899,6 +4181,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Связанный документ</h2><table><tbody><tr><td>Статус</td><td>актуальная запись</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Идентификатор</td><td>134789650000 [urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.51]; _value: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown</td></tr><tr><td>Тип</td><td>Листок нетрудоспособности</td></tr><tr><td>Описание</td><td>Период освобождения от работы: с 02.05.2025 по 10.05.2025</td></tr><tr><td>Содержимое</td><td>Вложение: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown; Название: Ссылка из CDA; содержимое документа не включено в источник; Дата создания: 2025-05-02</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-linked-document"
+          ]
         }
       }
     },
@@ -3933,6 +4220,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Номер документа</td></tr><tr><td>Значение</td><td>134789650000</td></tr><tr><td>Относится к</td><td>Связанный документ: Период освобождения от работы: с 02.05.2025 по 10.05.2025</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-11003"
+          ]
         }
       }
     },
@@ -3976,6 +4268,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Форма документа</td></tr><tr><td>Значение</td><td>Бумажная</td></tr><tr><td>Относится к</td><td>Связанный документ: Период освобождения от работы: с 02.05.2025 по 10.05.2025</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-6058"
+          ]
         }
       }
     },
@@ -4031,6 +4328,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Связанный документ</h2><table><tbody><tr><td>Статус</td><td>актуальная запись</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Идентификатор</td><td>459481548 [urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.51]; _value: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown</td></tr><tr><td>Тип</td><td>Протокол консультации</td></tr><tr><td>Содержимое</td><td>Вложение: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown; Название: Ссылка из CDA; содержимое документа не включено в источник; Дата создания: 2025-04-02</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-linked-document"
+          ]
         }
       }
     },
@@ -4065,6 +4367,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Номер документа</td></tr><tr><td>Значение</td><td>459481548</td></tr><tr><td>Относится к</td><td>Связанный документ</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-11003"
+          ]
         }
       }
     },
@@ -4108,6 +4415,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Форма документа</td></tr><tr><td>Значение</td><td>Бумажная</td></tr><tr><td>Относится к</td><td>Связанный документ</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-6058"
+          ]
         }
       }
     },
@@ -4163,6 +4475,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Связанный документ</h2><table><tbody><tr><td>Статус</td><td>актуальная запись</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Идентификатор</td><td>459481588 [urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.51]; _value: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown</td></tr><tr><td>Тип</td><td>Протокол лабораторного исследования</td></tr><tr><td>Содержимое</td><td>Вложение: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown; Название: Ссылка из CDA; содержимое документа не включено в источник; Дата создания: 2025-04-02</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-linked-document"
+          ]
         }
       }
     },
@@ -4197,6 +4514,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Номер документа</td></tr><tr><td>Значение</td><td>459481588</td></tr><tr><td>Относится к</td><td>Связанный документ</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-11003"
+          ]
         }
       }
     },
@@ -4240,6 +4562,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Форма документа</td></tr><tr><td>Значение</td><td>Бумажная</td></tr><tr><td>Относится к</td><td>Связанный документ</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-6058"
+          ]
         }
       }
     },
@@ -4295,6 +4622,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Связанный документ</h2><table><tbody><tr><td>Статус</td><td>актуальная запись</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Идентификатор</td><td>459481541 [urn:oid:1.2.643.5.1.13.13.12.2.77.7831.100.1.1.51]; _value: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown</td></tr><tr><td>Тип</td><td>Протокол инструментального исследования</td></tr><tr><td>Содержимое</td><td>Вложение: Дополнительные сведения: url: http://hl7.org/fhir/StructureDefinition/data-absent-reason; valueCode: unknown; Название: Ссылка из CDA; содержимое документа не включено в источник; Дата создания: 2025-04-02</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-linked-document"
+          ]
         }
       }
     },
@@ -4329,6 +4661,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Номер документа</td></tr><tr><td>Значение</td><td>459481541</td></tr><tr><td>Относится к</td><td>Связанный документ</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-11003"
+          ]
         }
       }
     },
@@ -4372,6 +4709,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Наблюдение</h2><table><tbody><tr><td>Статус</td><td>неизвестен</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Посещение</td><td>Посещение</td></tr><tr><td>Код / содержание</td><td>Форма документа</td></tr><tr><td>Значение</td><td>Бумажная</td></tr><tr><td>Относится к</td><td>Связанный документ</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-qualifier-6058"
+          ]
         }
       }
     },
@@ -4396,6 +4738,11 @@
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Связанный документ</h2><table><tbody><tr><td>Статус</td><td>актуальная запись</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Описание</td><td>Исходный учебный XML из руководства СЭМД 290, редакция 7; без исправлений</td></tr><tr><td>Содержимое</td><td>Вложение: Формат: application/xml; Содержимое вложения включено в ресурс</td></tr></tbody></table></div>"
+        },
+        "meta": {
+          "profile": [
+            "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-document-reference"
+          ]
         }
       }
     }

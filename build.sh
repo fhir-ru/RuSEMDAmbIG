@@ -6,6 +6,7 @@ PYTHON_BIN="${PYTHON_BIN:-python3}"
 "$PYTHON_BIN" scripts/fetch_dependency.py
 "$PYTHON_BIN" scripts/convert.py
 "$PYTHON_BIN" scripts/verify_mapping.py
+"$PYTHON_BIN" scripts/generate_content_profiles.py
 "$PYTHON_BIN" scripts/prepare_example.py
 bash run_sushi.sh
 if [[ ! -s input-cache/publisher.jar ]]; then

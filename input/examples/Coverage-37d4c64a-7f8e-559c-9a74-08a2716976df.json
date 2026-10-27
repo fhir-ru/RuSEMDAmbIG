@@ -3,7 +3,7 @@
   "id": "37d4c64a-7f8e-559c-9a74-08a2716976df",
   "meta": {
     "profile": [
-      "https://fhir.ru/ig/core/StructureDefinition/core-coverage"
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-coverage"
     ]
   },
   "status": "draft",

@@ -1,0 +1,1621 @@
+{
+  "source_pdf_sha256": "f545011bfabecf0021da237a782e534f5c923eb11ae770e229225652acea7feb",
+  "sections": [
+    {
+      "code": "DOCINFO",
+      "title": "Сведения о документе",
+      "required": true,
+      "requirement": "У2-1"
+    },
+    {
+      "code": "BENEFITS",
+      "title": "Льготы",
+      "required": false,
+      "requirement": "У2-2"
+    },
+    {
+      "code": "COMPLNTS",
+      "title": "Жалобы",
+      "required": false,
+      "requirement": "У2-3"
+    },
+    {
+      "code": "ANAM",
+      "title": "Анамнез заболевания",
+      "required": false,
+      "requirement": "У2-4"
+    },
+    {
+      "code": "LANAM",
+      "title": "Анамнез жизни",
+      "required": false,
+      "requirement": "У2-5"
+    },
+    {
+      "code": "DISABILITY",
+      "title": "Инвалидность",
+      "required": false,
+      "requirement": "У2-6"
+    },
+    {
+      "code": "SOCANAM",
+      "title": "Социальный анамнез",
+      "required": false,
+      "requirement": "У2-7"
+    },
+    {
+      "code": "OBSTETRICANAMN",
+      "title": "Акушерский анамнез",
+      "required": false,
+      "requirement": "У2-8"
+    },
+    {
+      "code": "ALL",
+      "title": "Аллергии и непереносимость",
+      "required": false,
+      "requirement": "У2-9"
+    },
+    {
+      "code": "EPIDEM",
+      "title": "Эпидемиологический анамнез",
+      "required": false,
+      "requirement": "У2-10"
+    },
+    {
+      "code": "RESCONS",
+      "title": "Результаты консультации/осмотра врача",
+      "required": false,
+      "requirement": "У2-11"
+    },
+    {
+      "code": "CONSILIUMDECISION",
+      "title": "Решение консилиума",
+      "required": false,
+      "requirement": "У2-12"
+    },
+    {
+      "code": "COMMISSION",
+      "title": "Решение врачебной комиссии",
+      "required": false,
+      "requirement": "У2-13"
+    },
+    {
+      "code": "RESLAB",
+      "title": "Результаты лабораторного исследования",
+      "required": false,
+      "requirement": "У2-14"
+    },
+    {
+      "code": "RESINSTR",
+      "title": "Результаты инструментального исследования",
+      "required": false,
+      "requirement": "У2-15"
+    },
+    {
+      "code": "GISTRESULT",
+      "title": "Результаты прижизненного патолого-анатомического исследования",
+      "required": false,
+      "requirement": "У2-16"
+    },
+    {
+      "code": "SUR",
+      "title": "Оперативное вмешательство",
+      "required": false,
+      "requirement": "У2-17"
+    },
+    {
+      "code": "TRANSFUSINFO",
+      "title": "Сведения о трансфузии",
+      "required": false,
+      "requirement": "У2-18"
+    },
+    {
+      "code": "ELSEPROCEDURE",
+      "title": "Прочие медицинские процедуры и манипуляции",
+      "required": false,
+      "requirement": "У2-19"
+    },
+    {
+      "code": "IMM",
+      "title": "Иммунизация",
+      "required": false,
+      "requirement": "У2-20"
+    },
+    {
+      "code": "DRUG",
+      "title": "Медикаментозное лечение",
+      "required": false,
+      "requirement": "У2-21"
+    },
+    {
+      "code": "MEDDEVICE",
+      "title": "Медицинские изделия",
+      "required": false,
+      "requirement": "У2-22"
+    },
+    {
+      "code": "VITALPARAM",
+      "title": "Витальные параметры",
+      "required": false,
+      "requirement": "У2-23"
+    },
+    {
+      "code": "SCORES",
+      "title": "Объективизированная оценка состояния пациента",
+      "required": false,
+      "requirement": "У2-24"
+    },
+    {
+      "code": "DGN",
+      "title": "Диагнозы",
+      "required": true,
+      "requirement": "У2-25"
+    },
+    {
+      "code": "REGIME",
+      "title": "Режим и рекомендации",
+      "required": false,
+      "requirement": "У2-26"
+    },
+    {
+      "code": "SERVICES",
+      "title": "Оказанные услуги",
+      "required": false,
+      "requirement": "У2-27"
+    },
+    {
+      "code": "LINKDOCS",
+      "title": "Связанные документы",
+      "required": false,
+      "requirement": "У2-28"
+    }
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "section": "DOCINFO",
+      "title": "Вид обращения",
+      "resource": "Observation",
+      "code": "800",
+      "cardinality": "1..1",
+      "requirement": "У3-1",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-1.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 2,
+      "section": "DOCINFO",
+      "title": "Место проведения",
+      "resource": "Observation",
+      "code": "801",
+      "cardinality": "0..1",
+      "requirement": "У3-2",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-2.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 3,
+      "section": "DOCINFO",
+      "title": "Способ выявления заболевания",
+      "resource": "Observation",
+      "code": "7003",
+      "cardinality": "0..1",
+      "requirement": "У3-3",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-3.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 4,
+      "section": "DOCINFO",
+      "title": "Состояние пациента",
+      "resource": "Observation",
+      "code": "804",
+      "cardinality": "1..1",
+      "requirement": "У3-4",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-4.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 5,
+      "section": "DOCINFO",
+      "title": "Объективные данные",
+      "resource": "Observation",
+      "code": "836",
+      "cardinality": "0..1",
+      "requirement": "У3-5",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-5.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 6,
+      "section": "DOCINFO",
+      "title": "Заключение консультации",
+      "resource": "Observation",
+      "code": "806",
+      "cardinality": "1..1",
+      "requirement": "У3-6",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": true,
+          "requirement": "У3-6.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 7,
+      "section": "DOCINFO",
+      "title": "Выявленные патологии",
+      "resource": "Observation",
+      "code": "808",
+      "cardinality": "0..*",
+      "requirement": "У3-7",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": true,
+          "requirement": "У3-7.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 8,
+      "section": "BENEFITS",
+      "title": "Льготная категория",
+      "resource": "Observation",
+      "code": "811",
+      "cardinality": "1..*",
+      "requirement": "У3-8",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-8.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 9,
+      "section": "COMPLNTS",
+      "title": "Жалобы",
+      "resource": "Observation",
+      "code": "835",
+      "cardinality": "1..1",
+      "requirement": "У3-9",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-9.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 10,
+      "section": "ANAM",
+      "title": "Анамнез заболевания",
+      "resource": "Observation",
+      "code": "7006",
+      "cardinality": "1..1",
+      "requirement": "У3-10",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": true,
+          "requirement": "У3-10.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 11,
+      "section": "LANAM",
+      "title": "Анамнез жизни (текстом)",
+      "resource": "Observation",
+      "code": "7006",
+      "cardinality": "1..1",
+      "requirement": "У3-11",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": true,
+          "requirement": "У3-11.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 12,
+      "section": "DISABILITY",
+      "title": "Сведения об инвалидности",
+      "resource": "Observation",
+      "code": "814",
+      "cardinality": "1..*",
+      "requirement": "У3-12",
+      "direct": [
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": true,
+          "requirement": "У3-12.1.2"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-12.1.3"
+        }
+      ],
+      "qualifiers": [
+        {
+          "code": "815",
+          "cardinality": "0..1"
+        },
+        {
+          "code": "8040",
+          "cardinality": "0..1"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "section": "SOCANAM",
+      "title": "Сведения об утрате профессиональной трудоспособности",
+      "resource": "Observation",
+      "code": "4058",
+      "cardinality": "0..*",
+      "requirement": "У3-13",
+      "direct": [
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": true,
+          "requirement": "У3-13.1.2"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-13.1.3"
+        }
+      ],
+      "qualifiers": [
+        {
+          "code": "4083",
+          "cardinality": "1..1"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "section": "SOCANAM",
+      "title": "Сведения о нетрудоспособности",
+      "resource": "Observation",
+      "code": "12006",
+      "cardinality": "0..1",
+      "requirement": "У3-14",
+      "direct": [
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-14.1.2"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-14.1.3"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 15,
+      "section": "SOCANAM",
+      "title": "Потенциально-опасные для здоровья социальные факторы",
+      "resource": "Observation",
+      "code": "812",
+      "cardinality": "0..*",
+      "requirement": "У3-15",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-15.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 16,
+      "section": "SOCANAM",
+      "title": "Вредные производственные факторы",
+      "resource": "Observation",
+      "code": "9052",
+      "cardinality": "0..*",
+      "requirement": "У3-16",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-16.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 17,
+      "section": "SOCANAM",
+      "title": "Вредные привычки и зависимости",
+      "resource": "Observation",
+      "code": "9053",
+      "cardinality": "0..*",
+      "requirement": "У3-17",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-17.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 18,
+      "section": "SOCANAM",
+      "title": "Сведения о занятости",
+      "resource": "Observation",
+      "code": "12524",
+      "cardinality": "0..1",
+      "requirement": "У3-18",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-18.1.2"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-18.1.3"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 19,
+      "section": "OBSTETRICANAMN",
+      "title": "Акушерский анамнез",
+      "resource": "Observation",
+      "code": "7006",
+      "cardinality": "1..1",
+      "requirement": "У3-19",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": true,
+          "requirement": "У3-19.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 20,
+      "section": "OBSTETRICANAMN",
+      "title": "Порядковый номер текущей беременности",
+      "resource": "Observation",
+      "code": "12310",
+      "cardinality": "1..1",
+      "requirement": "У3-20",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": true,
+          "requirement": "У3-20.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 21,
+      "section": "ALL",
+      "title": "Сведения об аллергических реакциях в анамнезе",
+      "resource": "Observation",
+      "code": "7006",
+      "cardinality": "0..1",
+      "requirement": "У3-21",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-21.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 22,
+      "section": "ALL",
+      "title": "Аллергические реакции в анамнезе",
+      "resource": "AllergyIntolerance",
+      "code": "11036",
+      "cardinality": "0..*",
+      "requirement": "У3-22",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-22.1.2"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": true,
+          "requirement": "У3-22.1.3"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-22.1.4"
+        }
+      ],
+      "qualifiers": [
+        {
+          "code": "12328",
+          "cardinality": "1..*"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "section": "EPIDEM",
+      "title": "Эпидемиологический анамнез",
+      "resource": "Observation",
+      "code": "7006",
+      "cardinality": "1..1",
+      "requirement": "У3-23",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-23.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 24,
+      "section": "RESCONS",
+      "title": "Сведения о результате проведения консультации/осмотра врача-специалиста",
+      "resource": "Observation",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-24",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-24.1.2"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-24.1.3"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": true,
+          "requirement": "У3-24.1.4"
+        },
+        {
+          "field": "performer",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-24.1.5"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 25,
+      "section": "CONSILIUMDECISION",
+      "title": "Сведения о результате проведения консилиума врачей",
+      "resource": "Observation",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-25",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-25.1.2"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": true,
+          "requirement": "У3-25.1.3"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-25.1.4"
+        },
+        {
+          "field": "performer",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-25.1.5"
+        }
+      ],
+      "qualifiers": [
+        {
+          "code": "6026",
+          "cardinality": "1..1"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "section": "COMMISSION",
+      "title": "Сведения о результатах проведения врачебной комиссии",
+      "resource": "Observation",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-26",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-26.1.2"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": true,
+          "requirement": "У3-26.1.3"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-26.1.4"
+        },
+        {
+          "field": "performer",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-26.1.5"
+        }
+      ],
+      "qualifiers": [
+        {
+          "code": "12475",
+          "cardinality": "1..1"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "section": "RESLAB",
+      "title": "Сведения о результатах проведения лабораторного исследования",
+      "resource": "Observation",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-27",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-27.1.2"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-27.1.3"
+        },
+        {
+          "field": "value",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-27.1.4"
+        },
+        {
+          "field": "performer",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-27.1.5"
+        }
+      ],
+      "qualifiers": [
+        {
+          "code": "7028",
+          "cardinality": "0..*"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "section": "RESINSTR",
+      "title": "Сведения о результатах проведения инструментального исследования",
+      "resource": "Observation",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-28",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-28.1.2"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-28.1.3"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-28.1.4"
+        },
+        {
+          "field": "performer",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-28.1.5"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 29,
+      "section": "GISTRESULT",
+      "title": "Сведения о результатах проведения патолого-анатомического исследования",
+      "resource": "Observation",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-29",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-29.1.2"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-29.1.3"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-29.1.4"
+        },
+        {
+          "field": "performer",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-29.1.5"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 30,
+      "section": "SUR",
+      "title": "Сведения о результатах проведения оперативного вмешательства",
+      "resource": "Observation",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-30",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-30.1.2"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-30.1.3"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-30.1.4"
+        },
+        {
+          "field": "performer",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-30.1.5"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 31,
+      "section": "TRANSFUSINFO",
+      "title": "Сведения о проведенной трансфузиии",
+      "resource": "Observation",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-31",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-31.1.2"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-31.1.3"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-31.1.4"
+        },
+        {
+          "field": "performer",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-31.1.5"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 32,
+      "section": "ELSEPROCEDURE",
+      "title": "Медицинские процедуры и манипуляции",
+      "resource": "Observation",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-32",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-32.1.2"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-32.1.3"
+        },
+        {
+          "field": "value",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-32.1.4"
+        },
+        {
+          "field": "performer",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-32.1.5"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 33,
+      "section": "IMM",
+      "title": "Сведения о применении иммунобиологического лекарственного препарата",
+      "resource": "MedicationAdministration",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-33",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-33.1.2"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-33.1.3"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 34,
+      "section": "DRUG",
+      "title": "Сведения о применении лекарственного препарата",
+      "resource": "MedicationStatement",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-34",
+      "direct": [],
+      "qualifiers": []
+    },
+    {
+      "number": 35,
+      "section": "MEDDEVICE",
+      "title": "Сведения о применении медицинского изделия",
+      "resource": "Observation",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-35",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-35.1.3"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-35.1.4"
+        }
+      ],
+      "qualifiers": [
+        {
+          "code": "12154",
+          "cardinality": "0..1"
+        },
+        {
+          "code": "9078",
+          "cardinality": "1..1"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "section": "VITALPARAM",
+      "title": "Сведения об измерении витального параметра",
+      "resource": "Observation",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-36",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-36.1.3"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-36.1.4"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-36.1.5"
+        }
+      ],
+      "qualifiers": [
+        {
+          "code": "6034",
+          "cardinality": "0..1"
+        },
+        {
+          "code": "8034",
+          "cardinality": "0..1"
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "section": "SCORES",
+      "title": "Сведения о расчете клинической шкалы или опросника",
+      "resource": "Observation",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-37",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-37.1.3"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-37.1.4"
+        },
+        {
+          "field": "value",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-37.1.5"
+        },
+        {
+          "field": "performer",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-37.1.6"
+        }
+      ],
+      "qualifiers": [
+        {
+          "code": "8019",
+          "cardinality": "0..1"
+        },
+        {
+          "code": "8020",
+          "cardinality": "0..*"
+        },
+        {
+          "code": "8037",
+          "cardinality": "0..1"
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "section": "DGN",
+      "title": "Сведения об установленном диагнозе",
+      "resource": "Condition",
+      "code": "838",
+      "cardinality": "1..*",
+      "requirement": "У3-38",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-38.1.3"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": true,
+          "requirement": "У3-38.1.4"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 39,
+      "section": "REGIME",
+      "title": "Режим и рекомендации",
+      "resource": "CarePlan",
+      "code": "7006",
+      "cardinality": "1..1",
+      "requirement": "У3-39",
+      "direct": [
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-39.1.2"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 40,
+      "section": "SERVICES",
+      "title": "Сведения об оказанных медицинских услугах",
+      "resource": "Procedure",
+      "code": "12168",
+      "cardinality": "1..*",
+      "requirement": "У3-40",
+      "direct": [
+        {
+          "field": "text",
+          "required": false,
+          "allow_absent": true,
+          "requirement": "У3-40.1.3"
+        },
+        {
+          "field": "effectiveTime",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-40.1.4"
+        },
+        {
+          "field": "value",
+          "required": true,
+          "allow_absent": false,
+          "requirement": "У3-40.1.5"
+        }
+      ],
+      "qualifiers": []
+    },
+    {
+      "number": 41,
+      "section": "LINKDOCS",
+      "title": "Сведения о связанном документе",
+      "resource": "DocumentReference",
+      "code": null,
+      "cardinality": "1..*",
+      "requirement": "У3-41",
+      "direct": [],
+      "qualifiers": []
+    }
+  ],
+  "qualifiers": [
+    {
+      "code": "815",
+      "title": "Сведения о порядке установления инвалидности",
+      "requirements": [
+        "У3-12.1.4",
+        "У3-12.1.4.1.2"
+      ],
+      "sections": [
+        "DISABILITY"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "8040",
+      "title": "Сведения о причине инвалидности",
+      "requirements": [
+        "У3-12.1.5",
+        "У3-12.1.5.1.2",
+        "У3-12.1.5.1.2.1"
+      ],
+      "sections": [
+        "DISABILITY"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "8041",
+      "title": "Дополнительная запись к причине инвалидности",
+      "requirements": [
+        "У3-12.1.5.1.3",
+        "У3-12.1.5.1.3.1.2"
+      ],
+      "sections": [
+        "DISABILITY"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "4083",
+      "title": "Срок, на который установлена степень утраты профессиональной трудоспособности",
+      "requirements": [
+        "У3-13.1.4",
+        "У3-13.1.4.1.2"
+      ],
+      "sections": [
+        "SOCANAM"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "12328",
+      "title": "Клинические проявления патологической реакции",
+      "requirements": [
+        "У3-22.1.6",
+        "У3-22.1.6.1.2",
+        "У3-22.1.6.1.3"
+      ],
+      "sections": [
+        "ALL"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "6026",
+      "title": "Цель проведения консилиума",
+      "requirements": [
+        "У3-25.1.6",
+        "У3-25.1.6.1.2",
+        "У3-25.1.6.1.3"
+      ],
+      "sections": [
+        "CONSILIUMDECISION"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "12475",
+      "title": "Цель проведения врачебной комиссии",
+      "requirements": [
+        "У3-26.1.6",
+        "У3-26.1.6.1.2",
+        "У3-26.1.6.1.3"
+      ],
+      "sections": [
+        "COMMISSION"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "7028",
+      "title": "Сведения об исследовании лабораторного показателя",
+      "requirements": [
+        "У3-27.1.6",
+        "У3-27.1.6.1.2",
+        "У3-27.1.6.1.3"
+      ],
+      "sections": [
+        "RESLAB"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": [
+        "text"
+      ]
+    },
+    {
+      "code": "8102",
+      "title": "Дополнительные сведения",
+      "requirements": [
+        "У3-27.1.6.1.4",
+        "У3-27.1.6.1.4.1.2",
+        "У3-27.1.6.1.4.1.3",
+        "У3-27.1.6.1.4.1.4",
+        "У3-27.1.6.1.4.1.4.1.1"
+      ],
+      "sections": [
+        "RESLAB"
+      ],
+      "value_required": false,
+      "allow_absent": true,
+      "required_fields": []
+    },
+    {
+      "code": "12154",
+      "title": "Серийный номер",
+      "requirements": [
+        "У3-35.1.5",
+        "У3-35.1.5.1.2"
+      ],
+      "sections": [
+        "MEDDEVICE"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "9078",
+      "title": "Количество использованных единиц",
+      "requirements": [
+        "У3-35.1.6",
+        "У3-35.1.6.1.2"
+      ],
+      "sections": [
+        "MEDDEVICE"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "6034",
+      "title": "Латеральность",
+      "requirements": [
+        "У3-36.1.6",
+        "У3-36.1.6.1.2"
+      ],
+      "sections": [
+        "VITALPARAM"
+      ],
+      "value_required": true,
+      "allow_absent": true,
+      "required_fields": []
+    },
+    {
+      "code": "8034",
+      "title": "Порядковый номер",
+      "requirements": [
+        "У3-36.1.7",
+        "У3-36.1.7.1.2"
+      ],
+      "sections": [
+        "VITALPARAM"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "8019",
+      "title": "Интерпретация результата расчета клинической шкалы или опросника",
+      "requirements": [
+        "У3-37.1.7",
+        "У3-37.1.7.1.2",
+        "У3-37.1.7.1.3"
+      ],
+      "sections": [
+        "SCORES"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "8020",
+      "title": "Параметр клинической шкалы или опросника",
+      "requirements": [
+        "У3-37.1.8",
+        "У3-37.1.8.1.2",
+        "У3-37.1.8.1.3",
+        "У3-37.1.8.1.4",
+        "У3-37.1.8.1.4.1.1",
+        "У3-37.1.8.1.4.1.2"
+      ],
+      "sections": [
+        "SCORES"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": [
+        "effectiveTime"
+      ]
+    },
+    {
+      "code": "8037",
+      "title": "Анатомическая локализация",
+      "requirements": [
+        "У3-37.1.9",
+        "У3-37.1.9.1.2"
+      ],
+      "sections": [
+        "SCORES"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "7026",
+      "title": "Степень обоснованности диагноза",
+      "requirements": [
+        "У3-38.1.5.1.4",
+        "У3-38.1.5.1.4.1.2"
+      ],
+      "sections": [
+        "DGN"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "12014",
+      "title": "Уточнение характера заболевания",
+      "requirements": [
+        "У3-38.1.5.1.5",
+        "У3-38.1.5.1.5.1.2"
+      ],
+      "sections": [
+        "DGN"
+      ],
+      "value_required": true,
+      "allow_absent": true,
+      "required_fields": []
+    },
+    {
+      "code": "823",
+      "title": "Уточнение внешней причины",
+      "requirements": [
+        "У3-38.1.5.1.6",
+        "У3-38.1.5.1.6.1.2"
+      ],
+      "sections": [
+        "DGN"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "824",
+      "title": "Уточнение вида травмы по способу получения",
+      "requirements": [
+        "У3-38.1.5.1.7",
+        "У3-38.1.5.1.7.1.2"
+      ],
+      "sections": [
+        "DGN"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "12120",
+      "title": "Сведения об установлении диагноза впервые в жизни",
+      "requirements": [
+        "У3-38.1.5.1.8",
+        "У3-38.1.5.1.8.1.2",
+        "У3-38.1.5.1.8.1.3"
+      ],
+      "sections": [
+        "DGN"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "12393",
+      "title": "Возраст пациента на дату установления диагноза",
+      "requirements": [
+        "У3-38.1.5.1.8.1.4",
+        "У3-38.1.5.1.8.1.4.1.2"
+      ],
+      "sections": [
+        "DGN"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "8004",
+      "title": "Сведения о сроке беременности",
+      "requirements": [
+        "У3-38.1.5.1.9",
+        "У3-38.1.5.1.9.1.2",
+        "У3-38.1.5.1.9.1.2.1"
+      ],
+      "sections": [
+        "DGN"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "8045",
+      "title": "Дополнительные сведения о заболевании",
+      "requirements": [
+        "У3-38.1.5.1.10",
+        "У3-38.1.5.1.10.1.2"
+      ],
+      "sections": [
+        "DGN"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "11002",
+      "title": "Серия документа",
+      "requirements": [
+        "У3-41.1.5",
+        "У3-41.1.5.1.2"
+      ],
+      "sections": [
+        "LINKDOCS"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "11003",
+      "title": "Номер документа",
+      "requirements": [
+        "У3-41.1.6",
+        "У3-41.1.6.1.2"
+      ],
+      "sections": [
+        "LINKDOCS"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    },
+    {
+      "code": "6058",
+      "title": "Форма документа",
+      "requirements": [
+        "У3-41.1.7",
+        "У3-41.1.7.1.2"
+      ],
+      "sections": [
+        "LINKDOCS"
+      ],
+      "value_required": true,
+      "allow_absent": false,
+      "required_fields": []
+    }
+  ]
+}

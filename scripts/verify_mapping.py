@@ -75,6 +75,21 @@ def main():
             for pointer in row['targets']:target(pointer);count+=1
         return {'source_scalars':source_count,'resolved_targets':count}
     check('all_source_scalars_and_trace_targets_resolve',scalars)
+    def observation_roles():
+        source_roles=doc.xpath('.//cda:observation/cda:performer/cda:modeCode',namespaces=NS)
+        destination_roles=[]
+        for resource in resources:
+            if resource['resourceType']!='Observation':continue
+            for performer in resource.get('performer',[]):
+                for extension in performer.get('extension',[]):
+                    if extension['url'].endswith('semd-amb-participant-role'):
+                        destination_roles.extend(extension['valueCodeableConcept'].get('coding',[]))
+        expected=[{'system':'urn:oid:'+node.get('codeSystem'),'code':node.get('code'),
+                   'version':node.get('codeSystemVersion'),'display':node.get('displayName')} for node in source_roles]
+        require(destination_roles==expected,'Observation participant roles lost or changed')
+        return {'roles_preserved':len(expected),'position_is_separate':True}
+    check('observation_participant_roles_preserve_coding',observation_roles)
+
     references=[]
     def walk(v):
         if isinstance(v,dict):

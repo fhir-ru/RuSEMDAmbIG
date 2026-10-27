@@ -17,5 +17,10 @@
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ru\" xml:lang=\"ru\"><h2>Связанный документ</h2><table><tbody><tr><td>Статус</td><td>актуальная запись</td></tr><tr><td>Пациент</td><td>Пациент: Сельченков Михаил Владимирович</td></tr><tr><td>Описание</td><td>Исходный учебный XML из руководства СЭМД 290, редакция 7; без исправлений</td></tr><tr><td>Содержимое</td><td>Вложение: Формат: application/xml; Содержимое вложения включено в ресурс</td></tr></tbody></table></div>"
+  },
+  "meta": {
+    "profile": [
+      "https://fhir.ru/ig/semd/amb/StructureDefinition/semd-amb-document-reference"
+    ]
   }
 }

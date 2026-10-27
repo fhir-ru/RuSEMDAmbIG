@@ -5,7 +5,7 @@ title: Ru SEMD Amb IG
 description: Представление клинического содержания протокола амбулаторной консультации СЭМД 290 редакции 7 в FHIR R5.
 status: draft
 experimental: true
-version: 0.1.0
+version: 0.2.0
 fhirVersion: 5.0.0
 copyrightYear: 2026+
 releaseLabel: draft
@@ -29,6 +29,10 @@ pages:
     title: Область применения и источники
   mapping.md:
     title: Маппинг
+  support.md:
+    title: Поддержка данных и обязательность
+  content.md:
+    title: Каталог данных редакции 7
   conventions.md:
     title: Соглашения маппинга
   limitations.md:
@@ -44,6 +48,8 @@ menu:
   Область применения: scope.html
   Маппинг: mapping.html
   Соглашения: conventions.html
+  Поддержка: support.html
+  Данные редакции 7: content.html
   Артефакты: artifacts.html
   Пример: Bundle-semd-amb-consultation-example.html
   Проверки: validation.html
